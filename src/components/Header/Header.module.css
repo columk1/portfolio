@@ -1,5 +1,5 @@
 .header {
-  padding: 1rem 6vw;
+  padding: 0.5rem 6vw;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -14,5 +14,5 @@
 
 .logo {
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }

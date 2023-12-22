@@ -1,10 +1,12 @@
 .categories {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
   gap: 1rem;
 }
 
 .btn {
-  width: 16.75%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -16,10 +18,10 @@
 }
 
 .circle {
-  width: 1.5rem;
-  height: 1.5rem;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
   border-radius: 50%;
-  background-color: rgb(1, 99, 108);
+  background-color: rgb(123, 216, 205);
 }
 
 .h2 {

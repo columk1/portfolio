@@ -8,11 +8,14 @@ const Feature = (props) => {
   return (
     <div className={styles.container}>
       <div className={styles.featureImg}>
-        <img src={props.imageUrl} alt='Featured Article' />
+        {/* <img src={props.imageUrl} alt='Latest Article' /> */}
+        <div className={styles.placeholder}>
+          <h2 className={styles.h2}>Articles</h2>
+        </div>
       </div>
       <Link to={'/blog/' + props.id}>
         <div className={styles.article}>
-          <div className={styles.label}>Featured Article</div>
+          <div className={styles.label}>Latest Article</div>
           <div className={styles.flexContainer}>
             <div className={styles.content}>
               <h3 className={styles.title}>{props.title}</h3>

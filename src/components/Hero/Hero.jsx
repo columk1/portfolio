@@ -1,5 +1,6 @@
 import styles from './Hero.module.css'
 import { NavLink } from 'react-router-dom'
+import Blob from '../Blob/Blob'
 const Hero = () => {
   return (
     <section className={styles.hero}>
@@ -9,12 +10,13 @@ const Hero = () => {
           This website has some subtext that goes here under the main title. It's a smaller font and
           it says something about me.
         </p>
-        <NavLink to={'/shop'}>
+        <NavLink to={'#projects'}>
           <button>View Projects</button>
         </NavLink>
       </div>
       <div className={styles.heroImg}>
-        <span className='material-symbols-outlined'>favorite</span>
+        <Blob />
+        {/* <span className='material-symbols-outlined'>favorite</span> */}
       </div>
     </section>
   )

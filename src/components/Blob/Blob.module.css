@@ -1,0 +1,9 @@
+.wrapper {
+  text-align: center;
+}
+
+.blob {
+  margin: 0 auto;
+  width: 53%;
+  height: auto;
+}

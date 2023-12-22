@@ -4,7 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: rgb(239, 245, 245);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 41, 48, 1) 0%,
+    rgba(11, 83, 96, 1) 65%,
+    rgba(0, 36, 38, 1) 99%
+  );
 }
 
 .heroContent {
@@ -37,7 +43,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 0.5em;
-  background-image: linear-gradient(to right top, #051937, #00476e, #007b9f, #00b3c1, #12ebd1);
+  background-image: linear-gradient(to right top, #052837, #00586e, #007b9f, #00b3c1, #12ebd1);
   color: white;
   & span {
     font-size: 2rem;

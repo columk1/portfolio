@@ -30,6 +30,7 @@ const Card = (props) => {
 Card.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
   author: PropTypes.string,
   imageUrl: PropTypes.string,
   markdown: PropTypes.string,

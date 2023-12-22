@@ -6,7 +6,6 @@ import { useOutletContext } from 'react-router-dom'
 
 const Articles = () => {
   const { articles } = useOutletContext()
-  // const featuredArticle = articles.pop()
   console.log(articles)
   return (
     <>

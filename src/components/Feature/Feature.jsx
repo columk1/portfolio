@@ -33,9 +33,12 @@ const Feature = (props) => {
 Feature.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  description: PropTypes.string,
   author: PropTypes.string,
   imageUrl: PropTypes.string,
   markdown: PropTypes.string,
+  tags: PropTypes.array,
+  readingLength: PropTypes.number,
 }
 
 export default Feature

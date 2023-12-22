@@ -1,0 +1,83 @@
+.container {
+  margin: 0 0 1rem auto;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: 340px;
+  gap: 2rem;
+}
+
+.featureImg {
+  height: 100%;
+  border-radius: 1rem;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.1);
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 1rem;
+  }
+}
+
+.article {
+  height: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.1);
+  background-color: rgb(255, 255, 255);
+  color: rgb(13, 82, 87);
+}
+
+.label {
+  width: min-content;
+  height: min-content;
+  padding: 0.25rem 1rem;
+  background-color: rgb(4, 238, 195);
+  font-size: 0.9rem;
+  font-weight: 800;
+  text-wrap: nowrap;
+  color: #444;
+  box-shadow: 2px 2px 0px 0px rgb(3, 208, 223);
+}
+
+.flexContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+}
+
+.title {
+  margin: 1rem 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgb(13, 82, 87);
+}
+
+.text {
+  margin: 0;
+  color: #444;
+}
+
+.info {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.tags {
+  font-weight: 800;
+}
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

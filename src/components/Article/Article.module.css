@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  padding: 2rem;
+  gap: 6rem;
+}
+
+.productImg {
+  max-width: 30vw;
+  display: flex;
+  justify-content: center;
+}
+
+.productImg img {
+  max-width: 20vw;
+  max-height: 70vh;
+  margin: 0 2rem;
+  object-fit: contain;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+}
+
+input[type='number'] {
+  width: 2.2rem;
+  padding: 0.15rem;
+}
+
+.inputGroup {
+  /* margin-bottom: 0.3rem; */
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form button {
+  width: 8rem;
+  background-color: #333;
+}

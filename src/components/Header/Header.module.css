@@ -1,0 +1,18 @@
+.header {
+  padding: 1rem 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: rgb(4, 41, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 41, 48, 1) 0%,
+    rgba(11, 83, 96, 1) 65%,
+    rgba(0, 36, 38, 1) 99%
+  );
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+}

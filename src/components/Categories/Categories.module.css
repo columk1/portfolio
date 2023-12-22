@@ -1,0 +1,27 @@
+.categories {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  width: 16.75%;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.7rem 1.25rem;
+  font-size: 0.85rem;
+  color: rgb(1, 99, 108);
+  background-color: transparent;
+  border: 1px solid rgb(1, 99, 108);
+}
+
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: rgb(1, 99, 108);
+}
+
+.h2 {
+  margin-bottom: 0.25rem;
+}

@@ -1,0 +1,25 @@
+.featured {
+  padding: 0 16vw;
+  margin: 0 auto;
+  background: rgb(4, 41, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 41, 48, 1) 0%,
+    rgba(11, 83, 96, 1) 65%,
+    rgba(0, 36, 38, 1) 99%
+  );
+}
+
+.articles {
+  margin: 3rem 0 0;
+  padding: 0 16vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem 1rem;
+}

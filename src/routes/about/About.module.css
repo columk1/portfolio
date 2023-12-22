@@ -1,29 +1,5 @@
-.cart {
-  padding: 0 2rem;
-}
-
-.cartItems {
-  display: flex;
-  flex-direction: column;
-}
-
-.checkout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .btn {
   background-color: #333;
-}
-
-.total {
-  margin-bottom: 0;
-  font-weight: bold;
-}
-
-.cart a {
-  color: #333;
 }
 
 .status {

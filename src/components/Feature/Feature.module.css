@@ -82,20 +82,22 @@
   margin: 0 0 0.5rem;
   font-size: 0.9rem;
   color: #889797;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .text {
   margin: 0;
   color: #444;
   font-size: 1.05rem;
-  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .info {
   display: flex;
   gap: 0.5rem;
   font-size: 0.8rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .tags {

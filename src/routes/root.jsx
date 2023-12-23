@@ -29,7 +29,7 @@ export default function Root() {
       <Header
         logo='..src/assets/react.svg'
         links={[
-          { title: 'Projects', route: '/' },
+          { title: 'Projects', route: '/', hashLink: '#projects' },
           { title: 'About', route: '/about' },
           { title: 'Blog', route: '/blog' },
           // title: <span className='material-symbols-outlined'>shopping_cart</span>,

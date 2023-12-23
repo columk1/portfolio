@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     webfontDownload([
-      'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Roboto:wght@500&display=swap',
+      'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Montserrat:wght@500;600&family=Roboto:wght@500&display=swap',
     ]),
   ],
   test: {

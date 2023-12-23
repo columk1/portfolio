@@ -13,30 +13,35 @@ const Article = () => {
   // let navigate = useNavigate()
 
   return (
-    <div className={styles.container}>
-      <div className={styles.articleImg}>
-        <img src={article.image} alt={article.title} />
+    <section id='article' className={styles.container}>
+      <div className={styles.imgContainer}>
+        <img src={article.imageUrl} alt={article.title} />
       </div>
-      <div className={styles.articleInfo}>
-        <h2>{article.title}</h2>
-        <p className={styles.description}>{article.description}</p>
-        <button className={styles.btn} type='submit' disabled={true}>
-          Share
-        </button>
+      <div className={styles.flexContainer}>
+        <div className={styles.content}>
+          <h3 className={styles.title}>{article.title}</h3>
+          <p className={styles.date}>{article.formattedDate}</p>
+        </div>
+        <div className={styles.info}>
+          <p className={styles.tags}>{article.tags.map((tag) => tag.toUpperCase())}</p>
+          <p>|</p>
+          <p className={styles.time}>{`${article.readingLength} MIN READ`}</p>
+        </div>
+        <div className={styles.markdown}>{article.markdown}</div>
       </div>
-    </div>
+    </section>
   )
 }
 
-Article.propTypes = {
-  id: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string,
-  author: PropTypes.string,
-  imageUrl: PropTypes.string,
-  markdown: PropTypes.string,
-  tags: PropTypes.array,
-  readingLength: PropTypes.number,
-}
+// Article.propTypes = {
+//   id: PropTypes.string,
+//   title: PropTypes.string,
+//   description: PropTypes.string,
+//   author: PropTypes.string,
+//   imageUrl: PropTypes.string,
+//   markdown: PropTypes.string,
+//   tags: PropTypes.array,
+//   readingLength: PropTypes.number,
+// }
 
 export default Article

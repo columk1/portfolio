@@ -4,7 +4,7 @@
   background: rgb(4, 41, 48);
   background: linear-gradient(
     90deg,
-    rgba(4, 41, 48, 1) 0%,
+    rgb(3, 38, 32) 0%,
     rgba(11, 83, 96, 1) 65%,
     rgba(0, 36, 38, 1) 99%
   );
@@ -12,7 +12,7 @@
 
 .articles {
   /* margin: 3rem 0 0; */
-  padding: 0 16vw;
+  padding: 0 16vw 3rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;

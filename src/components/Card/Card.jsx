@@ -12,6 +12,7 @@ const Card = (props) => {
         <div className={styles.flexContainer}>
           <div className={styles.content}>
             <p className={styles.title}>{props.title}</p>
+            <p className={styles.date}>{props.formattedDate}</p>
             {/* <p className={styles.author}>{props.author.username}</p> */}
             {/* <p className={`${styles.text} ${styles.lineClamp}`}>{`${props.markdown}`}</p> */}
             <p className={`${styles.text} ${styles.lineClamp}`}>{props.description}</p>
@@ -30,6 +31,7 @@ const Card = (props) => {
 Card.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  formattedDate: PropTypes.string,
   description: PropTypes.string,
   author: PropTypes.string,
   imageUrl: PropTypes.string,

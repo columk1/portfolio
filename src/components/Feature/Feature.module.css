@@ -12,10 +12,10 @@
   border-radius: 1rem;
   /* border: 1px solid black; */
   /* background: linear-gradient(90deg, rgba(4, 41, 48) 0%, rgba(11, 83, 96) 65%, rgba(0, 36, 38) 99%); */
-  background-image: url('../../../public/mesh-610.png');
+  background-image: url('../../assets/mesh.png');
   /* background-position: 80%; */
   /* background-blend-mode: multiply; */
-  background-size: 21%;
+  background-size: 20%;
   box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.15);
   & img {
     width: 0%;
@@ -42,6 +42,11 @@
   box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.15);
   background-color: rgb(255, 255, 255);
   color: rgb(13, 82, 87);
+  outline: 1px solid transparent;
+  transition: outline-color 0.25s;
+  &:hover {
+    outline: 1px solid #646cff;
+  }
 }
 
 .label {
@@ -67,15 +72,24 @@
 }
 
 .title {
-  margin: 1rem 0 0.5rem;
+  margin: 1rem 0 0rem;
   font-size: 1.8rem;
   font-weight: 800;
   color: rgb(13, 82, 87);
 }
 
+.date {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+  color: #889797;
+  font-family: 'Roboto', sans-serif;
+}
+
 .text {
   margin: 0;
   color: #444;
+  font-size: 1.05rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 .info {

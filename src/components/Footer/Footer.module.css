@@ -8,7 +8,7 @@
 
 .icon {
   font-size: 1.5rem;
-  color: rgb(237, 244, 244);
+  color: #edf4f4;
 }
 
 .iconWrapper {
@@ -17,10 +17,4 @@
 
 .iconWrapper:hover {
   transform: rotate(360deg) scale(1.2);
-}
-
-.fa-github {
-}
-
-.fa-github:hover {
 }

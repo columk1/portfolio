@@ -6,7 +6,9 @@ import webfontDownload from 'vite-plugin-webfont-dl'
 export default defineConfig({
   plugins: [
     react(),
-    webfontDownload(['https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined']),
+    webfontDownload([
+      'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&family=Roboto:wght@500&display=swap',
+    ]),
   ],
   test: {
     globals: true,

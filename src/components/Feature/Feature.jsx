@@ -19,6 +19,7 @@ const Feature = (props) => {
           <div className={styles.flexContainer}>
             <div className={styles.content}>
               <h3 className={styles.title}>{props.title}</h3>
+              <p className={styles.date}>{props.formattedDate}</p>
               <p className={styles.text}>{props.description}</p>
             </div>
             <div className={styles.info}>
@@ -36,6 +37,7 @@ const Feature = (props) => {
 Feature.propTypes = {
   id: PropTypes.string,
   title: PropTypes.string,
+  formattedDate: PropTypes.string,
   description: PropTypes.string,
   author: PropTypes.string,
   imageUrl: PropTypes.string,

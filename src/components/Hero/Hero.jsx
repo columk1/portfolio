@@ -10,9 +10,11 @@ const Hero = () => {
           This website has some subtext that goes here under the main title. It's a smaller font and
           it says something about me.
         </p>
-        <NavLink to={'#projects'}>
+        {/* <NavLink to={}> */}
+        <a href='#projects'>
           <button>View Projects</button>
-        </NavLink>
+        </a>
+        {/* </NavLink> */}
       </div>
       <div className={styles.heroImg}>
         <Blob />

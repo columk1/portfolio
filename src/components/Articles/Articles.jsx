@@ -13,7 +13,7 @@ const Articles = () => {
         <Feature {...articles[0]} />
       </section>
       <section className={styles.articles}>
-        <Categories categories={['Javascript', 'HTML', 'CSS', 'React', 'NodeJS']} />
+        <Categories categories={['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS']} />
         <div className={styles.grid}>
           {articles.map((article) => (
             <Card key={article.title} {...article} />

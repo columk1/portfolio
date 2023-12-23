@@ -45,7 +45,7 @@
   border-radius: 1rem;
   /* border: 1px solid black; */
   box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.15);
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(242, 248, 248);
   color: rgb(13, 82, 87);
   outline: 1px solid transparent;
   transition: outline-color 0.25s;
@@ -94,7 +94,7 @@
   margin: 0;
   color: #444;
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 500;
   font-family: 'Montserrat', sans-serif;
 }
 

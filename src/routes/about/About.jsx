@@ -3,12 +3,11 @@ import { useOutletContext, Link } from 'react-router-dom'
 
 const About = () => {
   return (
-    <section>
-      <h2 className={styles.title}>About me</h2>
-      <div className={styles.status}>
-        <h3>Nothing to see here</h3>
+    <section className={styles.about}>
+      <div className={styles.content}>
+        <h2 className={styles.h2}>About me</h2>
         <Link to={'/'}>
-          <button>Home</button>
+          <button>Go Back</button>
         </Link>
       </div>
     </section>

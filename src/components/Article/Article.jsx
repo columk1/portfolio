@@ -1,12 +1,18 @@
 import styles from './Article.module.css'
-import PropTypes from 'prop-types'
 import { useParams, useOutletContext, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+// import { useState } from 'react'
+import he from 'he'
 import Markdown from 'react-markdown'
 // import remarkGfm from 'remark-gfm'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
+import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
+import js from 'react-syntax-highlighter/dist/esm/languages/prism/javascript'
+import css from 'react-syntax-highlighter/dist/esm/languages/prism/css'
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-import he from 'he'
+
+SyntaxHighlighter.registerLanguage('jsx', jsx)
+SyntaxHighlighter.registerLanguage('js', js)
+SyntaxHighlighter.registerLanguage('css', css)
 
 const Article = () => {
   // const { article } = useLoaderData()

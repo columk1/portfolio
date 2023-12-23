@@ -1,3 +1,21 @@
+@import '../../variables.css';
+
+.about {
+  height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  display: grid;
+  place-items: center;
+}
+
+.h2 {
+  font-size: 3rem;
+  color: white;
+}
+
 .btn {
   background-color: #333;
 }

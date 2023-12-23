@@ -111,6 +111,11 @@ button {
   }
 }
 
+pre {
+  padding: 0.25rem 0.5rem;
+  background-color: rgb(30, 30, 30);
+}
+
 .error-container {
   height: 50vh;
   display: grid;

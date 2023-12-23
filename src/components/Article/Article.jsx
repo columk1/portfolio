@@ -2,6 +2,11 @@ import styles from './Article.module.css'
 import PropTypes from 'prop-types'
 import { useParams, useOutletContext, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
+import Markdown from 'react-markdown'
+// import remarkGfm from 'remark-gfm'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import he from 'he'
 
 const Article = () => {
   // const { article } = useLoaderData()
@@ -9,6 +14,8 @@ const Article = () => {
 
   const id = useParams().articleId
   const article = articles.find((article) => article.id == id)
+
+  let markdown = he.decode(article.markdown)
 
   // let navigate = useNavigate()
 
@@ -27,7 +34,30 @@ const Article = () => {
           <p>|</p>
           <p className={styles.time}>{`${article.readingLength} MIN READ`}</p>
         </div>
-        <div className={styles.markdown}>{article.markdown}</div>
+        <div className={styles.markdown}>
+          <Markdown
+            children={markdown}
+            components={{
+              code(props) {
+                const { children, className, node, ...rest } = props
+                const match = /language-(\w+)/.exec(className || '')
+                return match ? (
+                  <SyntaxHighlighter
+                    {...rest}
+                    PreTag='div'
+                    children={String(children).replace(/\n$/, '')}
+                    language={match[1]}
+                    style={vscDarkPlus}
+                  />
+                ) : (
+                  <code {...rest} className={className}>
+                    {children}
+                  </code>
+                )
+              },
+            }}
+          />
+        </div>
       </div>
     </section>
   )

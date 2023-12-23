@@ -1,0 +1,26 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  color: rgb(237, 244, 244);
+}
+
+.icon {
+  font-size: 1.5rem;
+  color: rgb(237, 244, 244);
+}
+
+.iconWrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
+.iconWrapper:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+
+.fa-github {
+}
+
+.fa-github:hover {
+}

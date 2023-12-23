@@ -1,3 +1,5 @@
+@import '../../variables.css';
+
 .categories {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

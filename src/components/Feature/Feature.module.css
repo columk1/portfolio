@@ -1,5 +1,7 @@
+@import '../../variables.css';
+
 .container {
-  margin: 0 auto;
+  margin: 1rem auto 0;
   height: 300px;
   display: grid;
   grid-template-columns: 5fr 4fr;
@@ -16,6 +18,7 @@
   /* background-position: 80%; */
   /* background-blend-mode: multiply; */
   background-size: 20%;
+  background-position: left;
   box-shadow: 0px 15px 50px 22px rgba(0, 64, 67, 0.15);
   & img {
     width: 0%;
@@ -23,6 +26,8 @@
     object-fit: contain;
     border-radius: 1rem;
   }
+}
+.featureImg:hover {
 }
 
 .placeholder {
@@ -101,7 +106,14 @@
 }
 
 .tags {
+  display: flex;
+  gap: 0.5rem;
   font-weight: 800;
+}
+
+.tag {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .lineClamp {

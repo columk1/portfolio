@@ -23,8 +23,16 @@ const Feature = (props) => {
               <p className={styles.text}>{props.description}</p>
             </div>
             <div className={styles.info}>
-              <p className={styles.tags}>{props.tags.map((tag) => tag.toUpperCase())}</p>
-              <p>|</p>
+              {/* TODO: Refactor this map */}
+              <p className={styles.tags}>
+                {props.tags.map((tag) => (
+                  <span className={styles.tag} key={tag}>
+                    <span>{tag.toUpperCase()}</span>
+                    <span>|</span>
+                  </span>
+                ))}
+              </p>
+              {/* <p>|</p> */}
               <p className={styles.time}>{`${props.readingLength} MIN READ`}</p>
             </div>
           </div>

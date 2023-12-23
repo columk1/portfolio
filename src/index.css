@@ -1,3 +1,5 @@
+@import './variables.css';
+
 html {
   overflow-x: hidden;
   margin-right: calc(-1 * (100vw - 100%));
@@ -34,12 +36,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   color: #333;
-  background: linear-gradient(
-    90deg,
-    rgba(4, 41, 48, 1) 0%,
-    rgba(11, 83, 96, 1) 65%,
-    rgba(0, 36, 38, 1) 99%
-  );
+  background: var(--gradientBG);
 }
 
 #root {
@@ -130,7 +127,6 @@ pre {
 .h-divider {
   width: 100%;
   height: 1px;
-  margin-bottom: 1rem;
   background-color: rgb(255, 255, 255, 0.2);
 }
 

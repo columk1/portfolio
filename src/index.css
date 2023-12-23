@@ -26,6 +26,28 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0 auto;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #333;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 41, 48, 1) 0%,
+    rgba(11, 83, 96, 1) 65%,
+    rgba(0, 36, 38, 1) 99%
+  );
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .loading {
   opacity: 0.25;
   transition: opacity 200ms;
@@ -59,14 +81,6 @@ li {
 h1,
 h2,
 h3 {
-}
-
-body {
-  margin: 0 auto;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  color: #333;
 }
 
 h1 {

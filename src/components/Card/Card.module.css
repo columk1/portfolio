@@ -14,15 +14,16 @@
 
 .imgContainer {
   width: 100%;
-  height: 40px;
+  height: 15%;
   /* margin: 1rem 0; */
   /* Same gradient as in the header */
   border-radius: 1rem 1rem 0 0;
   background: linear-gradient(
     90deg,
-    rgba(4, 41, 48, 1) 0%,
-    rgba(11, 83, 96, 1) 65%,
-    rgba(0, 36, 38, 1) 99%
+    rgb(0, 180, 150) 0%,
+    rgb(0, 240, 204) 40%,
+    rgb(1, 228, 202) 60%,
+    rgb(1, 202, 172) 100%
   );
   & img {
     width: 0%;

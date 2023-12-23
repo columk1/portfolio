@@ -11,11 +11,12 @@
 }
 
 .articles {
-  margin: 3rem 0 0;
+  /* margin: 3rem 0 0; */
   padding: 0 16vw;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: rgb(237, 246, 245);
 }
 
 .grid {

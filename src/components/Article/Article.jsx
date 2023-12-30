@@ -1,18 +1,7 @@
 import styles from './Article.module.css'
 import { useParams, useOutletContext, useNavigate } from 'react-router-dom'
+import Markdown from '../../components/Markdown/Markdown'
 // import { useState } from 'react'
-import he from 'he'
-import Markdown from 'react-markdown'
-// import remarkGfm from 'remark-gfm'
-import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
-import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
-import js from 'react-syntax-highlighter/dist/esm/languages/prism/javascript'
-import css from 'react-syntax-highlighter/dist/esm/languages/prism/css'
-import { vscDarkPlus } from 'react-syntax-highlighter/dist/cjs/styles/prism'
-
-SyntaxHighlighter.registerLanguage('jsx', jsx)
-SyntaxHighlighter.registerLanguage('js', js)
-SyntaxHighlighter.registerLanguage('css', css)
 
 const Article = () => {
   // const { article } = useLoaderData()
@@ -20,8 +9,6 @@ const Article = () => {
 
   const id = useParams().articleId
   const article = articles.find((article) => article.id == id)
-
-  let markdown = he.decode(article.markdown)
 
   // let navigate = useNavigate()
 
@@ -36,33 +23,12 @@ const Article = () => {
           <p className={styles.date}>{article.formattedDate}</p>
         </div>
         <div className={styles.info}>
-          <p className={styles.tags}>{article.tags.map((tag) => tag.toUpperCase())}</p>
+          <p className={styles.tags}>{article.tags.map((tag) => tag.toUpperCase()).join(', ')}</p>
           <p>|</p>
           <p className={styles.time}>{`${article.readingLength} MIN READ`}</p>
         </div>
         <div className={styles.markdown}>
-          <Markdown
-            children={markdown}
-            components={{
-              code(props) {
-                const { children, className, node, ...rest } = props
-                const match = /language-(\w+)/.exec(className || '')
-                return match ? (
-                  <SyntaxHighlighter
-                    {...rest}
-                    PreTag='div'
-                    children={String(children).replace(/\n$/, '')}
-                    language={match[1]}
-                    style={vscDarkPlus}
-                  />
-                ) : (
-                  <code {...rest} className={className}>
-                    {children}
-                  </code>
-                )
-              },
-            }}
-          />
+          <Markdown markdownString={article.markdown} />
         </div>
       </div>
     </section>

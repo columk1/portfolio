@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const Card = (props) => {
   return (
-    <Link to={'/blog/' + props.id}>
+    <Link to={'/blog/' + props._id}>
       <div className={styles.card}>
         <div className={styles.imgContainer}>
           <img src={props.imageUrl} alt={props.title} />
@@ -29,7 +29,7 @@ const Card = (props) => {
 }
 
 Card.propTypes = {
-  id: PropTypes.string,
+  _id: PropTypes.string,
   title: PropTypes.string,
   formattedDate: PropTypes.string,
   description: PropTypes.string,

@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import Loading from '../components/Loading/Loading.jsx'
 import { Outlet, useOutletContext } from 'react-router-dom'
-import humps from 'humps'
 
 const Blog = () => {
   // const [articles, setArticles] = useState([])
@@ -14,7 +13,7 @@ const Blog = () => {
   useEffect(() => {
     fetch('http://localhost:3000/api/posts')
       .then((res) => res.json())
-      .then((data) => setArticles(humps.camelizeKeys(data.data)))
+      .then((data) => setArticles(data.data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false))
   }, [])

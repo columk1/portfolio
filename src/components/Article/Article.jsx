@@ -8,7 +8,7 @@ const Article = () => {
   const { articles } = useOutletContext()
 
   const id = useParams().articleId
-  const article = articles.find((article) => article.id == id)
+  const article = articles.find((article) => article._id == id)
 
   // let navigate = useNavigate()
 

@@ -13,7 +13,7 @@ const Blog = () => {
   useEffect(() => {
     fetch('http://localhost:3000/api/posts')
       .then((res) => res.json())
-      .then((data) => setArticles(data.data))
+      .then((data) => setArticles(data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false))
   }, [])

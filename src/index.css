@@ -15,12 +15,12 @@ html {
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Courier, monospace;
   line-height: 1.5;
-  font-weight: 400;
+  font-weight: 300;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: var(--lines);
   background-color: white;
 
   font-synthesis: none;
@@ -32,19 +32,22 @@ html {
 
 body {
   margin: 0 auto;
+  padding: 1px; /* To stop margin collapse */
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  color: #333;
-  background: var(--gradientBG);
+  min-width: 100%;
+  min-height: 100%;
+  color: var(--lines);
+  background-color: var(--bg);
 }
 
 #root {
-  min-height: 100vh;
+  min-height: calc(100svh - 2rem);
+  margin: 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid var(--lines);
 }
 
 .loading {
@@ -59,7 +62,7 @@ a {
 
 nav a {
   font-weight: bold;
-  color: rgb(207, 228, 229);
+  color: var(--lines);
   text-decoration: inherit;
   cursor: pointer;
   &:hover {
@@ -68,7 +71,7 @@ nav a {
 }
 
 nav a.active {
-  color: white;
+  color: black;
 }
 
 ul,
@@ -127,7 +130,7 @@ pre {
 .h-divider {
   width: 100%;
   height: 1px;
-  background-color: rgb(255, 255, 255, 0.2);
+  background-color: var(--lines);
 }
 
 /* .error-page a {

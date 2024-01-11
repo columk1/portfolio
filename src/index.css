@@ -71,23 +71,20 @@ a {
   text-decoration: inherit;
 }
 
-nav a {
-  font-weight: bold;
-  color: var(--lines);
+header a {
+  /* font-weight: bold; */
+  color: var(--text);
   text-decoration: inherit;
   cursor: pointer;
   &:hover {
-    color: var(--text);
+    /* color: var(--text); */
+    font-weight: bold;
   }
 }
 
 /* TODO: Add a black square or black line pseudo to show active link */
 nav a.active {
-  color: var(--text);
-}
-
-nav a.inactive {
-  color: var(--lines);
+  font-weight: bold;
 }
 
 ul,

@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const ListItem = (props) => {
+  let year = new Date(props.createdAt).getFullYear()
   return (
     <Link to={'/blog/' + props._id}>
       <div className={styles.listItem}>
         <p className={styles.title}>{props.title}</p>
-        <p className={styles.date}>{props.formattedDate}</p>
+        <p className={styles.date}>{props.formattedDate + ', ' + year}</p>
       </div>
       {/* <div className={styles.info}>
             <p className={styles.tags}>{props.tags[0].toUpperCase()}</p>
@@ -21,9 +22,10 @@ const ListItem = (props) => {
 ListItem.propTypes = {
   _id: PropTypes.string,
   title: PropTypes.string,
+  createdAt: PropTypes.string,
   formattedDate: PropTypes.string,
   description: PropTypes.string,
-  author: PropTypes.string,
+  author: PropTypes.object,
   imageUrl: PropTypes.string,
   markdown: PropTypes.string,
   tags: PropTypes.array,

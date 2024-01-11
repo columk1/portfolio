@@ -11,18 +11,18 @@ function load(key) {
 
 export default function Root() {
   const navigation = useNavigation()
-  const [articles, setArticles] = useState(load('articles'))
+  const [posts, setPosts] = useState(load('posts'))
 
   useEffect(() => {
-    const sessionArticles = JSON.parse(sessionStorage.getItem('articles'))
+    const sessionposts = JSON.parse(sessionStorage.getItem('posts'))
     console.log('Session Retrieval')
-    if (sessionArticles) setArticles(sessionArticles)
+    if (sessionposts) setPosts(sessionposts)
   }, [])
 
   useEffect(() => {
     console.log('Session Update')
-    sessionStorage.setItem('articles', JSON.stringify(articles))
-  }, [articles])
+    sessionStorage.setItem('posts', JSON.stringify(posts))
+  }, [posts])
 
   return (
     <>
@@ -37,11 +37,7 @@ export default function Root() {
         ]}
       />
       <main className='main page'>
-        {navigation.state === 'loading' ? (
-          <Loading />
-        ) : (
-          <Outlet context={{ articles, setArticles }} />
-        )}
+        {navigation.state === 'loading' ? <Loading /> : <Outlet context={{ posts, setPosts }} />}
       </main>
       <Footer />
     </>

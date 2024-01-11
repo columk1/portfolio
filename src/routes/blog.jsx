@@ -3,8 +3,8 @@ import Loading from '../components/Loading/Loading.jsx'
 import { Outlet, useOutletContext } from 'react-router-dom'
 
 const Blog = () => {
-  // const [articles, setArticles] = useState([])
-  const { articles, setArticles } = useOutletContext()
+  // const [posts, setPosts] = useState([])
+  const { posts, setPosts } = useOutletContext()
 
   // const [data, setData] = useState(null)
   // const [error, setError] = useState(null)
@@ -13,11 +13,11 @@ const Blog = () => {
   useEffect(() => {
     fetch('http://localhost:3000/api/posts')
       .then((res) => res.json())
-      .then((data) => setArticles(data.filter((article) => article.isPublished)))
+      .then((data) => setPosts(data.filter((post) => post.isPublished)))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false))
   }, [])
-  return loading ? <Loading /> : <Outlet context={{ articles }} />
+  return loading ? <Loading /> : <Outlet context={{ posts }} />
 }
 
 export default Blog

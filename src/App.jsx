@@ -5,8 +5,8 @@ import ErrorPage from './ErrorPage.jsx'
 import Home from './routes/home/home.jsx'
 import Projects from './components/Projects/Projects.jsx'
 import Blog from './routes/blog.jsx'
-import Articles from './components/Articles/Articles.jsx'
-import Article from './components/Article/Article.jsx'
+import Posts from './components/Posts/Posts.jsx'
+import Post from './components/Post/Post.jsx'
 import About from './routes/about/About.jsx'
 
 const router = createBrowserRouter([
@@ -24,8 +24,8 @@ const router = createBrowserRouter([
         path: 'blog',
         element: <Blog />,
         children: [
-          { index: true, element: <Articles /> },
-          { path: ':articleId', element: <Article /> },
+          { index: true, element: <Posts /> },
+          { path: ':postId', element: <Post /> },
         ],
       },
       {

@@ -70,6 +70,7 @@
   padding: min(8rem, 10vw);
   display: grid;
   place-content: center;
+  color: var(--textFade);
   font-size: 2.5rem;
   /* font-weight: bold; */
   line-height: 1.1;

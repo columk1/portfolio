@@ -7,7 +7,8 @@
   );
   --bg: #e2e2e2;
   --lines: #999;
-  --text: #4d4d4d;
+  --text: #333;
+  --textFade: #4d4d4d;
   --bodyFont: 'IBM Plex Mono', monospace;
   --headerFont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }

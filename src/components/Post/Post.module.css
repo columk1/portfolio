@@ -6,7 +6,7 @@
   padding: 2rem;
   /* gap: 6rem; */
   width: min(95vw, 880px);
-  background-color: rgb(246, 248, 248);
+  background-color: var(--bg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,9 +32,10 @@
 
 .title {
   margin: 1rem 0 0rem;
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: rgb(13, 82, 87);
+  font-family: var(--headerFont);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--textFade);
 }
 
 .date {
@@ -56,4 +57,21 @@
 }
 
 .markdown {
+  font-family: var(--headerFont);
+  font-size: inherit;
+}
+
+/* .markdownpre {
+  padding: 0.25rem 0.5rem;
+  background-color: rgb(30, 30, 30);
+} */
+
+.markdown pre code {
+  font-size: 0.9rem;
+  font-family: var(--bodyFont);
+  font-weight: bold;
+}
+
+.markdown code {
+  font-size: 0.9rem;
 }

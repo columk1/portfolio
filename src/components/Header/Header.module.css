@@ -10,13 +10,6 @@
   background-color: var(--bg);
 }
 
-.header h1 {
-  font-weight: inherit;
-  &.active {
-    font-weight: bold;
-  }
-}
-
 .logo {
   color: var(--text);
   font-size: 1rem;

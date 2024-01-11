@@ -14,9 +14,11 @@ const Post = () => {
 
   return (
     <section id='post' className={styles.container}>
-      <div className={styles.imgContainer}>
-        <img src={post.imageUrl} alt={post.title} />
-      </div>
+      {/* {post.imageUrl && (
+        <div className={styles.imgContainer}>
+          <img src={post.imageUrl} alt={post.title} />
+        </div>
+      )} */}
       <div className={styles.flexContainer}>
         <div className={styles.content}>
           <h3 className={styles.title}>{post.title}</h3>

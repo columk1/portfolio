@@ -125,11 +125,6 @@ button {
   }
 }
 
-pre {
-  padding: 0.25rem 0.5rem;
-  background-color: rgb(30, 30, 30);
-}
-
 .error-container {
   height: 50vh;
   display: grid;
@@ -178,3 +173,44 @@ pre {
     background-color: #f9f9f9;
   }
 } */
+
+/* Some extra styles for customizing markdown syntax highlighting for HTML specifically */
+
+.prismjs {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  color: rgb(195, 206, 227);
+  background: rgb(38, 50, 56);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+  overflow: auto;
+  position: relative;
+  margin: 0px;
+  padding: 1.25em 1em;
+  font-weight: bold;
+}
+.tag {
+  color: rgb(199, 146, 234);
+}
+
+.attr-name {
+  color: rgb(255, 203, 107);
+}
+
+.attr-value {
+  color: rgb(195, 232, 141);
+}
+
+.punctuation {
+  color: rgb(137, 221, 255);
+}
+
+.doctype {
+  color: rgb(84, 110, 122);
+}

@@ -1,8 +1,10 @@
+@import '../../variables.css';
+
 .projects {
-  height: 100vh;
+  height: 100%;
   display: grid;
   place-items: center;
-  color: white;
+  /* color: var(--color-text); */
 }
 
 .h2 {

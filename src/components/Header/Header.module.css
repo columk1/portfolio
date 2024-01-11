@@ -7,11 +7,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgb(4, 41, 48);
   background-color: var(--bg);
 }
 
 .logo {
-  color: var(--lines);
+  color: var(--text);
   font-size: 1rem;
 }

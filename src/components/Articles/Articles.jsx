@@ -1,6 +1,6 @@
 import Feature from '../Feature/Feature'
 import Categories from '../Categories/Categories'
-import Card from '../Card/Card'
+import ListItem from '../ListItem/ListItem'
 import styles from './Articles.module.css'
 import { useOutletContext } from 'react-router-dom'
 
@@ -9,15 +9,18 @@ const Articles = () => {
   console.log(articles)
   return (
     <>
-      <section className={styles.featured}>
-        <Feature {...articles[0]} />
-      </section>
-      <section className={styles.articles}>
-        <Categories categories={['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS']} />
-        <div className={styles.grid}>
-          {articles.map((article) => (
-            <Card key={article.title} {...article} />
-          ))}
+      <section className={styles.blog}>
+        <div className={styles.blogContainer}>
+          <div className={styles.posts}>
+            <h2 className={styles.header}>Blog</h2>
+            {/* <Categories categories={['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS']} /> */}
+            <ul className={styles.list}>
+              {articles.map((article) => (
+                <ListItem key={article.title} {...article} />
+              ))}
+            </ul>
+          </div>
+          <div className={styles.footer}></div>
         </div>
       </section>
     </>

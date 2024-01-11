@@ -7,7 +7,7 @@ const About = () => {
       <div className={styles.content}>
         <h2 className={styles.h2}>About me</h2>
         <Link to={'/'}>
-          <button>Go Back</button>
+          <button className={styles.btn}>Go Back</button>
         </Link>
       </div>
     </section>

@@ -1,13 +1,14 @@
 @import '../../variables.css';
 
 .hero {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  height: calc(100vh - 5rem);
-  padding: 2rem 12vw;
+  font-family: var(--headerFont);
+  /* height: calc(100vh - 5rem); */
+  height: 100%;
+  padding: 0 12vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--lines);
+  color: var(--text);
   background-color: var(--bg);
 }
 
@@ -89,7 +90,7 @@
     position: absolute;
     content: url('../../assets/SVG/pointer.svg');
     right: 15%;
-    bottom: 35%;
+    bottom: 25%;
   }
 }
 

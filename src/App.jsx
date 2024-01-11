@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './routes/root'
 import ErrorPage from './ErrorPage.jsx'
 import Home from './routes/home/home.jsx'
+import Projects from './components/Projects/Projects.jsx'
 import Blog from './routes/blog.jsx'
 import Articles from './components/Articles/Articles.jsx'
 import Article from './components/Article/Article.jsx'
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Home /> },
+      {
+        path: 'projects',
+        element: <Projects />,
+      },
       {
         path: 'blog',
         element: <Blog />,

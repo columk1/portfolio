@@ -29,13 +29,14 @@ export default function Root() {
       <Header
         logo='..src/assets/react.svg'
         links={[
-          { title: 'Projects', route: '/', hashLink: '#projects' },
+          // { title: 'Projects', route: '/', hashLink: '#projects' },
+          { title: 'Projects', route: '/projects' },
           { title: 'About', route: '/about' },
           { title: 'Blog', route: '/blog' },
           // title: <span className='material-symbols-outlined'>shopping_cart</span>,
         ]}
       />
-      <main className='main'>
+      <main className='main page'>
         {navigation.state === 'loading' ? (
           <Loading />
         ) : (

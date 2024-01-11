@@ -1,24 +1,55 @@
 @import '../../variables.css';
 
-.featured {
-  padding: 0 16vw;
-  margin: 0 auto;
-  background: rgb(4, 41, 48);
-  background: linear-gradient(
-    90deg,
-    rgb(3, 38, 32) 0%,
-    rgba(11, 83, 96, 1) 65%,
-    rgba(0, 36, 38, 1) 99%
-  );
-}
-
-.articles {
-  /* margin: 3rem 0 0; */
-  padding: 0 16vw 3rem;
+.blog {
+  /* height: calc(100vh - 5rem); */
+  height: 100%;
+  width: 100%;
+  padding: 0 12vw;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  background-color: rgb(237, 246, 245);
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 60vw;
+  max-width: 970px;
+  min-height: 60vh;
+  /* height: 340px; */
+  margin-bottom: 0;
+  border: 1px solid var(--lines);
+  container-type: inline-size;
+}
+
+.posts {
+  padding: 1rem 1.5rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.header {
+  margin: 0;
+  font-family: var(--headerFont);
+  font-weight: 400;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  height: 35px;
+  border-top: 1px solid var(--lines);
+  /* border-right: 1px solid var(--lines);
+  border-left: 1px solid var(--lines);
+  border-bottom: 1px solid var(--lines); */
 }
 
 .grid {

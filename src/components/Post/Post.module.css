@@ -46,7 +46,7 @@
 }
 
 .info {
-  margin: 0 0 1.5rem;
+  margin: 0 0 2rem;
   display: flex;
   gap: 0.5rem;
   color: var(--textFade);
@@ -108,6 +108,28 @@
   & li {
     display: list-item;
     list-style: square;
+  }
+  & img {
+    width: min(80%, 700px);
+    margin: 0 10% 0;
+  }
+  & blockquote {
+    /* color: #666; */
+    margin: 0;
+    padding-left: 1.25rem;
+    font-family: var(--headerFont);
+    font-style: italic;
+    font-weight: bold;
+    border-left: 0.3rem var(--textFade) solid;
+    & p {
+      quotes: initial;
+      &::after {
+        content: '”';
+      }
+      &::before {
+        content: '“';
+      }
+    }
   }
 }
 

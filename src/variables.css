@@ -10,5 +10,8 @@
   --text: #333;
   --textFade: #4d4d4d;
   --bodyFont: 'IBM Plex Mono', monospace;
-  --headerFont: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --headerFont: Helvetica, Arial, sans-serif;
+  --link: #9d00ff;
+  --linkHover: #b94afe;
+  --linkVisited: #8200d3;
 }

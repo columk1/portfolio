@@ -33,32 +33,62 @@
 .title {
   margin: 1rem 0 0rem;
   font-family: var(--headerFont);
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 400;
   color: var(--textFade);
 }
 
 .date {
   margin: 0 0 0.5rem;
-  font-size: 0.9rem;
-  color: #889797;
+  color: var(--textFade);
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
 }
 
 .info {
   margin: 0 0 1.5rem;
   display: flex;
   gap: 0.5rem;
-  font-size: 0.8rem;
+  color: var(--textFade);
   font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
   & p {
     margin: 0;
   }
 }
 
 .markdown {
-  font-family: var(--headerFont);
-  font-size: inherit;
+  /* font-family: var(--headerFont); */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  & a {
+    color: var(--link);
+    font-weight: 500;
+    &:visited {
+      color: var(--linkVisited);
+    }
+    &:hover {
+      color: var(--linkHover);
+    }
+  }
+  & h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--bodyFont);
+    font-weight: bold;
+    /* color: var(--textFade); */
+  }
+  & h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+  & h4 {
+    margin-bottom: 0.5rem;
+    /* font-weight: 600; */
+  }
 }
 
 /* .markdownpre {

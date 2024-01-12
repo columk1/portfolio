@@ -3,10 +3,14 @@ import Categories from '../Categories/Categories'
 import ListItem from '../ListItem/ListItem'
 import styles from './Posts.module.css'
 import { useOutletContext } from 'react-router-dom'
-const tags = ['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS']
+import { useState } from 'react'
+
+const tags = ['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS', 'All']
 
 const Posts = () => {
   const { posts } = useOutletContext()
+  const [filter, setFilter] = useState('All')
+
   console.log(posts)
   return (
     <>
@@ -15,23 +19,27 @@ const Posts = () => {
           <div className={styles.tags}>
             <ul className={styles.tagsList}>
               {tags.map((tag) => (
-                <li key={tag} className={styles.tag}>
-                  <span className={styles.unchecked}>□</span>
-                  {tag}
-                </li>
+                <button key={tag} onClick={() => setFilter(tag)} className={styles.tag}>
+                  <li className={styles.tag}>
+                    {filter === tag ? (
+                      <span className={styles.checked}>■</span>
+                    ) : (
+                      <span className={styles.unchecked}>□</span>
+                    )}
+                    {tag}
+                  </li>
+                </button>
               ))}
-              <li className={styles.tag}>
-                <span className={styles.checked}>■</span>All
-              </li>
             </ul>
           </div>
           <div className={styles.posts}>
             <h2 className={styles.header}>Blog</h2>
-            {/* <Categories categories={['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS']} /> */}
             <ul className={styles.list}>
-              {posts.map((post) => (
-                <ListItem key={post.title} {...post} />
-              ))}
+              {posts
+                .filter((post) => filter === 'All' || post.tags.includes(filter))
+                .map((post) => (
+                  <ListItem key={post.title} {...post} />
+                ))}
             </ul>
           </div>
           <div className={styles.footer}></div>

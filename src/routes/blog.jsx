@@ -18,7 +18,7 @@ const Blog = () => {
       .catch((err) => console.log(err))
       .finally(() => setLoading(false))
   }, [])
-  return loading ? <Loading /> : <Outlet context={{ posts }} />
+  return loading ? <Loading /> : <Outlet context={{ posts, setPosts }} />
 }
 
 export default Blog

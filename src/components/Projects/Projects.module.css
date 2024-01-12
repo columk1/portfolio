@@ -1,7 +1,7 @@
 @import '../../variables.css';
 
 .projects {
-  height: calc(100svh - 3rem);
+  height: 100%;
   display: grid;
   place-items: center;
   /* color: var(--color-text); */

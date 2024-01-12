@@ -76,15 +76,16 @@ header a {
   color: var(--text);
   text-decoration: inherit;
   cursor: pointer;
+  font-weight: 300;
   &:hover {
     /* color: var(--text); */
-    font-weight: bold;
+    font-weight: 400;
   }
 }
 
 /* TODO: Add a black square or black line pseudo to show active link */
-nav a.active {
-  font-weight: bold;
+header a.active {
+  font-weight: 400;
 }
 
 ul,
@@ -110,6 +111,7 @@ button {
   background: none;
   font-family: inherit;
   font-size: inherit;
+  color: inherit;
   cursor: pointer;
 }
 

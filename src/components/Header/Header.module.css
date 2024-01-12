@@ -1,16 +1,27 @@
 @import '../../variables.css';
 
 .header {
+  position: fixed;
   width: 100%;
   height: 3rem;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 2.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--bg);
+  background-color: transparent;
+  z-index: 1;
 }
 
 .logo {
   color: var(--text);
   font-size: 1rem;
+  font-weight: inherit;
+}
+
+@media (max-width: 1280px) {
+  .header {
+    position: relative;
+    padding: 0.5rem 1.25rem;
+    border-bottom: 1px solid var(--lines);
+  }
 }

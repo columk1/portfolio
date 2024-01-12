@@ -1,5 +1,5 @@
 import styles from './Post.module.css'
-import { useParams, useOutletContext, useNavigate } from 'react-router-dom'
+import { useParams, useOutletContext } from 'react-router-dom'
 import Markdown from '../Markdown/Markdown'
 // import { useState } from 'react'
 
@@ -10,8 +10,6 @@ const Post = () => {
   const id = useParams().postId
   const post = posts.find((post) => post._id == id)
 
-  // let navigate = useNavigate()
-
   return (
     <section id='post' className={styles.container}>
       {/* {post.imageUrl && (
@@ -21,7 +19,7 @@ const Post = () => {
       )} */}
       <div className={styles.flexContainer}>
         <div className={styles.content}>
-          <h3 className={styles.title}>{post.title}</h3>
+          <h2 className={styles.title}>{post.title}</h2>
           <p className={styles.date}>{post.formattedDate}</p>
         </div>
         <div className={styles.info}>

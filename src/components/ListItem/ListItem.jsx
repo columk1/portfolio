@@ -8,7 +8,7 @@ const ListItem = (props) => {
     <Link to={'/blog/' + props._id}>
       <div className={styles.listItem}>
         <p className={styles.title}>{props.title}</p>
-        <p className={styles.date}>{props.formattedDate + ', ' + year}</p>
+        <p className={styles.date}>{props.formattedDate}</p>
       </div>
       {/* <div className={styles.info}>
             <p className={styles.tags}>{props.tags[0].toUpperCase()}</p>

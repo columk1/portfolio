@@ -8,9 +8,10 @@ const Blog = () => {
 
   // const [data, setData] = useState(null)
   // const [error, setError] = useState(null)
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(posts ? false : true)
 
   useEffect(() => {
+    if (posts) return
     fetch('http://localhost:3000/api/posts')
       .then((res) => res.json())
       .then((data) => setPosts(data.filter((post) => post.isPublished)))

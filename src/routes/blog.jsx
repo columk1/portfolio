@@ -2,6 +2,11 @@ import { useEffect, useState } from 'react'
 import Loading from '../components/Loading/Loading.jsx'
 import { Outlet, useOutletContext } from 'react-router-dom'
 
+const API_DOMAIN =
+  import.meta.env.MODE === 'production'
+    ? import.meta.env.VITE_PROD_API
+    : import.meta.env.VITE_DEV_API
+
 const Blog = () => {
   // const [posts, setPosts] = useState([])
   const { posts, setPosts } = useOutletContext()
@@ -12,7 +17,7 @@ const Blog = () => {
 
   useEffect(() => {
     if (posts.length > 0) return
-    fetch('http://localhost:3000/api/posts')
+    fetch(`${API_DOMAIN}/api/posts`)
       .then((res) => res.json())
       .then((data) => setPosts(data.filter((post) => post.isPublished)))
       .catch((err) => console.log(err))

@@ -2,8 +2,7 @@
 
 .hero {
   font-family: var(--headerFont);
-  /* height: calc(100vh - 5rem); */
-  height: 100%;
+  height: calc(100svh - 7rem);
   padding: 0 12vw;
   display: flex;
   justify-content: center;

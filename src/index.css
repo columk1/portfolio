@@ -61,6 +61,10 @@ body {
   }
 }
 
+section {
+  padding-bottom: 1.5rem;
+}
+
 .loading {
   opacity: 0.25;
   transition: opacity 200ms;
@@ -223,4 +227,11 @@ button {
 
 .doctype {
   color: rgb(84, 110, 122);
+}
+
+/* Account for header becoming fixed on larger screens */
+@media (max-width: 1280px) {
+  section {
+    margin-top: -3rem;
+  }
 }

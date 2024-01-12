@@ -31,7 +31,7 @@
 }
 
 .title {
-  margin: 1rem 0 0rem;
+  margin: 2rem 0 0rem;
   font-family: var(--headerFont);
   font-size: 2.3rem;
   font-weight: 400;
@@ -137,11 +137,4 @@
 .markdown > pre {
   padding: 0 0.25rem;
   background: #f0f0f0;
-}
-
-/* Account for header becoming fixed on larger screens */
-@media (min-width: 1280px) {
-  .container {
-    margin-top: 3rem;
-  }
 }

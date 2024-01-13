@@ -20,6 +20,7 @@
   max-width: 970px;
   min-height: 65vh;
   /* height: 340px; */
+  padding-top: 2rem;
   margin-bottom: 0;
   border: 1px solid var(--lines);
   container-type: inline-size;

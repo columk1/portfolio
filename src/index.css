@@ -41,8 +41,8 @@ body {
 }
 
 #root {
-  height: calc(100svh - 3rem - 2px);
-  margin: 1.5rem;
+  height: calc(100svh - calc(var(--frame) * 2) - 2px);
+  margin: var(--frame);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -227,12 +227,12 @@ button {
 
 section {
   min-height: calc(100svh - 8rem - 2px);
-  margin-top: 1.5rem;
-  /* padding-bottom: 1.5rem; */
+  margin-top: 3rem;
+  padding-bottom: 3rem;
 }
 /* Account for header becoming fixed on larger screens */
 @media (max-width: 1280px) {
   section {
-    margin-top: -5rem;
+    margin-top: 0rem;
   }
 }

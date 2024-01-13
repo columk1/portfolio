@@ -6,6 +6,7 @@
     rgba(0, 36, 38, 1) 100%
   );
   --bg: #e2e2e2;
+  --bgLight: #e7e7e7;
   --lines: #999;
   --text: #333;
   --textFade: #4d4d4d;
@@ -14,4 +15,5 @@
   --link: #9d00ff;
   --linkHover: #b94afe;
   --linkVisited: #8200d3;
+  --frame: 2rem;
 }

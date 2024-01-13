@@ -2,9 +2,9 @@
 
 .header {
   position: fixed;
-  width: 100%;
+  width: calc(100% - calc(4px + var(--frame) * 2));
   height: 3rem;
-  padding: 0.5rem 2.75rem;
+  padding: 0.5rem 1.25rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,7 +21,7 @@
 @media (max-width: 1280px) {
   .header {
     position: relative;
-    padding: 0.5rem 1.25rem;
+    width: 100%;
     border-bottom: 1px solid var(--lines);
   }
 }

@@ -27,6 +27,7 @@ const Post = () => {
           <p>|</p>
           <p className={styles.time}>{`${post.readingLength} MIN READ`}</p>
         </div>
+        <div className={styles.divider}></div>
         <div className={styles.markdown}>
           <Markdown markdownString={post.markdown} />
         </div>

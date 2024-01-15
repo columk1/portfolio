@@ -35,11 +35,11 @@
   aspect-ratio: 1;
   display: grid;
   place-content: center;
-  border-top: 1px solid var(--lines);
-  border-left: 1px solid var(--lines);
-  border-right: 1px solid var(--lines);
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
   &:last-of-type {
-    border-bottom: 1px solid var(--lines);
+    border-bottom: 1px solid var(--accent);
   }
 }
 
@@ -48,9 +48,9 @@
   aspect-ratio: 1 / 2;
   display: grid;
   place-content: center;
-  border-top: 1px solid var(--lines);
-  border-left: 1px solid var(--lines);
-  border-right: 1px solid var(--lines);
+  border-top: 1px solid var(--accent);
+  border-left: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
 }
 
 /* .heroContent {
@@ -72,8 +72,8 @@
   font-size: 2rem;
   /* font-weight: bold; */
   line-height: 1.1;
-  border-top: 1px solid var(--lines);
-  border-right: 1px solid var(--lines);
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
   /* border-left: 1px solid var(--lines); */
 }
 
@@ -81,15 +81,14 @@
   grid-column: 2;
   grid-row: -1 / -2;
   height: 100%;
-  border-top: 1px solid var(--lines);
-  border-right: 1px solid var(--lines);
-  border-bottom: 1px solid var(--lines);
+  border-top: 1px solid var(--accent);
+  border-right: 1px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
   position: relative;
-  &::after {
+  & svg {
     position: absolute;
-    content: url('../../assets/SVG/pointer.svg');
+    bottom: 35%;
     right: 15%;
-    bottom: 25%;
   }
 }
 

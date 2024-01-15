@@ -45,7 +45,7 @@
   font-size: 2rem;
   /* font-weight: 600; */
   color: var(--textFade);
-  border-bottom: 0.5rem solid var(--textFade);
+  border-bottom: 0.5rem solid var(--text);
 }
 
 .projectDescription {
@@ -62,11 +62,11 @@
 }
 
 .tag {
-  padding: 0.25rem 0.5rem;
+  padding: 0.15rem 0.5rem;
   font-size: 0.9rem;
   font-weight: bold;
-  color: white;
-  background-color: var(--textFade);
+  color: var(--bgLight);
+  background-color: var(--text);
 }
 
 .links {

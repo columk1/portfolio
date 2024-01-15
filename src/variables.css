@@ -7,9 +7,11 @@
   );
   --bg: #e2e2e2;
   --bgLight: #e7e7e7;
+  --accent: #834bdb;
   --lines: #999;
   --text: #333;
   --textFade: #4d4d4d;
+  /* --labelBg: #333; */
   --bodyFont: 'IBM Plex Mono', monospace;
   --headerFont: Helvetica, Arial, sans-serif;
   --link: #9d00ff;
@@ -17,3 +19,13 @@
   --linkVisited: #8200d3;
   --frame: 2rem;
 }
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #181818;
+    --bgLight: #181818;
+    --lines: #555;
+    --text: #d5d5d5;
+    --textFade: #c2c2c2;
+  }
+} */

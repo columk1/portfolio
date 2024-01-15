@@ -1,11 +1,12 @@
 import styles from './Project.module.css'
 import GithubIcon from '../icons/GithubIcon'
 import LinkIcon from '../icons/LinkIcon'
+import { useRef } from 'react'
 
 const Project = ({ project }) => {
   const { title, description, image, tags, github, url } = project
 
-  const iconStyles = { color: '#4d4d4d', width: '27' }
+  const iconStyles = { color: 'var(--text)', width: '27' }
 
   return (
     <div className={styles.project}>

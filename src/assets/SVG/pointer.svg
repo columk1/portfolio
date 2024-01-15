@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="pointer_2" data-name="pointer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.01 102.03" width="50">
   <defs>
-    <style>
+    <style>`{
       .pointer {
         fill: #e2e2e2;
         stroke: #4d4d4d;
         stroke-miterlimit: 10;
       }
-    </style>
+    }`</style>
   </defs>
   <g id="pointer_1" data-name="pointer_1">
-    <polygon class="pointer" points="58.8 59.51 .5 1.21 .5 80.84 18.69 63.25 34.53 101.37 47.64 95.87 32.54 59.51 58.8 59.51"/>
+    <polygon className="pointer" points="58.8 59.51 .5 1.21 .5 80.84 18.69 63.25 34.53 101.37 47.64 95.87 32.54 59.51 58.8 59.51"/>
   </g>
 </svg>

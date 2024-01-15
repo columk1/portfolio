@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import Header from '../components/Header/Header.jsx'
 import Loading from '../components/Loading/Loading.jsx'
 import Footer from '../components/Footer/Footer.jsx'
+import ThemeSelector from '../components/ThemeSelector/ThemeSelector.jsx'
 
 function load(key) {
   const item = window.sessionStorage.getItem(key)
@@ -40,6 +41,7 @@ export default function Root() {
         {navigation.state === 'loading' ? <Loading /> : <Outlet context={{ posts, setPosts }} />}
       </main>
       <Footer />
+      <ThemeSelector />
     </>
   )
 }

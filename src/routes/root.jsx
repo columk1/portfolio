@@ -31,8 +31,8 @@ export default function Root() {
         links={[
           // { title: 'Projects', route: '/', hashLink: '#projects' },
           { title: 'Projects', route: '/projects' },
-          { title: 'About', route: '/about' },
           { title: 'Blog', route: '/blog' },
+          // { title: 'About', route: '/about' },
           // title: <span className='material-symbols-outlined'>shopping_cart</span>,
         ]}
       />

@@ -71,21 +71,8 @@ a {
   text-decoration: inherit;
 }
 
-header a {
-  /* font-weight: bold; */
-  color: var(--text);
-  text-decoration: inherit;
-  cursor: pointer;
-  font-weight: 300;
-  &:hover {
-    /* color: var(--text); */
-    font-weight: 400;
-  }
-}
-
-/* TODO: Add a black square or black line pseudo to show active link */
 header a.active {
-  font-weight: 400;
+  border-bottom: 4px solid var(--text);
 }
 
 ul,

@@ -154,7 +154,7 @@ const Hero = () => {
 
         {/* <div className={styles.heroContent}> */}
         <div className={styles.title}>
-          <p>Full Stack Web Development & Design</p>
+          <p>Hi, I'm a full stack developer and designer based in Squamish, British Columbia.</p>
         </div>
         <div className={styles.footer}></div>
         {/* <NavLink to={}> */}

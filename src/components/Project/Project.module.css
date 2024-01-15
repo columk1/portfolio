@@ -43,6 +43,7 @@
 .projectTitle {
   margin: 0 0 0 2rem;
   font-size: 2rem;
+  /* font-weight: 600; */
   color: var(--textFade);
   border-bottom: 0.5rem solid var(--textFade);
 }
@@ -73,7 +74,7 @@
   justify-content: flex-end;
   align-items: center;
   gap: 0.6rem;
-  /* & p {
-      margin: 0;
-    } */
+  & a:hover {
+    transform: scale(1.05);
+  }
 }

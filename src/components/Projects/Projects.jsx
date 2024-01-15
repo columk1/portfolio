@@ -5,7 +5,7 @@ const projects = [
   {
     title: 'Blog API',
     description:
-      'A REST API for my markdown blog using Node, Express and MongoDB. CRUD operations are done using a CMS I built using React and Tailwind. The CMS allows me to preview markdown while editing. Authentication is handled using JWTs.',
+      'A REST API for my personal blog using Node, Express and MongoDB. I built a CMS to interact with the API using React and Tailwind. It allows the admin to preview the markdown while editing. Authentication is handled using JWTs.',
     image: 'src/assets/blog-cms.jpg',
     tags: ['Node', 'Express', 'MongoDB', 'React', 'Tailwind'],
     github: 'https://github.com/columk1/blog-api',

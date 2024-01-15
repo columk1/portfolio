@@ -2,7 +2,7 @@
 
 .hero {
   font-family: var(--headerFont);
-  padding: 0 12vw;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,11 +65,11 @@
   grid-column: 2;
   grid-row: 1 / 6;
   height: 100%;
-  padding: min(8rem, 10vw);
+  padding: min(6rem, 6vw);
   display: grid;
   place-content: center;
   color: var(--textFade);
-  font-size: 2.5rem;
+  font-size: 2rem;
   /* font-weight: bold; */
   line-height: 1.1;
   border-top: 1px solid var(--lines);

@@ -6,7 +6,7 @@
   padding: 0;
   /* gap: 6rem; */
   width: min(95vw, 990px);
-  background-color: var(--bgLight);
+  /* background-color: var(--bgLight); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@
 .flexContainer {
   width: 100%;
   padding: 3rem;
-  border: 1px solid #333;
+  /* border: 1px solid var(--accent); */
 }
 
 .content {
@@ -121,6 +121,8 @@
   & img {
     width: min(80%, 700px);
     margin: 0 10% 0;
+    background: var(--bgLight);
+    border-radius: 10px;
   }
   & blockquote {
     /* color: #666; */
@@ -171,8 +173,8 @@
 /* Style code blocks that haven't been assigned a language */
 .markdown > pre {
   margin: 1.5rem 0;
-  padding: 0 0.25rem;
-  background: #f0f0f0;
+  /* padding: 0 0.25rem; */
+  /* background: var(--bg); */
 }
 
 @media (max-width: 1280px) {

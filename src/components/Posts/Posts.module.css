@@ -21,7 +21,7 @@
   min-height: 65vh;
   /* height: 340px; */
   margin-bottom: 0;
-  border: 1px solid var(--lines);
+  border: 1px solid var(--accent);
   container-type: inline-size;
 }
 
@@ -44,6 +44,9 @@
   align-items: center;
   gap: 0.25rem;
   font-weight: 300;
+  /* & span {
+    color: var(--accent);
+  } */
   &:hover {
     font-weight: 400;
   }
@@ -76,7 +79,7 @@
 
 .footer {
   height: 35px;
-  border-top: 1px solid var(--lines);
+  border-top: 1px solid var(--accent);
   /* border-right: 1px solid var(--lines);
   border-left: 1px solid var(--lines);
   border-bottom: 1px solid var(--lines); */

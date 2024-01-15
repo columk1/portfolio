@@ -1,4 +1,4 @@
-:root {
+body {
   --gradientBG: linear-gradient(
     90deg,
     rgba(4, 41, 48, 1) 0%,
@@ -6,7 +6,7 @@
     rgba(0, 36, 38, 1) 100%
   );
   --bg: #e2e2e2;
-  --bgLight: #e7e7e7;
+  --bgLight: #e2e2e2;
   --accent: #834bdb;
   --lines: #999;
   --text: #333;
@@ -18,6 +18,14 @@
   --linkHover: #b94afe;
   --linkVisited: #8200d3;
   --frame: 2rem;
+}
+
+body.dark {
+  --bg: #181818;
+  /* --bgLight: #181818; */
+  --lines: #555;
+  --text: #d5d5d5;
+  --textFade: #c2c2c2;
 }
 
 /* @media (prefers-color-scheme: dark) {

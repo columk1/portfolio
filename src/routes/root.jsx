@@ -26,7 +26,7 @@ export default function Root() {
   }, [posts])
 
   return (
-    <>
+    <div className='mainContainer'>
       <Header
         logo='..src/assets/react.svg'
         links={[
@@ -42,6 +42,6 @@ export default function Root() {
       </main>
       <Footer />
       <ThemeSelector />
-    </>
+    </div>
   )
 }

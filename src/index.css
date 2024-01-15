@@ -42,6 +42,9 @@ body {
 
 #root {
   position: relative;
+}
+
+.mainContainer {
   height: calc(100svh - calc(var(--frame) * 2) - 2px);
   margin: var(--frame);
   display: flex;

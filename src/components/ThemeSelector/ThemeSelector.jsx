@@ -3,6 +3,24 @@ import { useState, useEffect } from 'react'
 const ThemeSelector = () => {
   const [isDark, setIsDark] = useState(false)
 
+  useEffect(() => {
+    if (isDark) {
+      document.body.classList.add('dark')
+    } else {
+      document.body.classList.remove('dark')
+    }
+  }, [isDark])
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)')
+
+    if (mq.matches) {
+      setIsDark(true)
+    }
+
+    mq.addEventListener('change', (e) => setIsDark(e.matches))
+  }, [])
+
   return (
     <div className={styles.themeSelector}>
       <ul className={styles.themes}>
@@ -13,7 +31,7 @@ const ThemeSelector = () => {
             ) : (
               <span className={styles.unchecked}>□</span>
             )}
-            Light
+            LIGHT
           </li>
         </button>
         <button onClick={() => setIsDark(true)} className={styles.btn}>
@@ -23,7 +41,7 @@ const ThemeSelector = () => {
             ) : (
               <span className={styles.unchecked}>□</span>
             )}
-            Dark
+            DARK
           </li>
         </button>
       </ul>

@@ -23,7 +23,7 @@
   max-width: 970px;
   /* min-height: 65vh; */
   /* height: 340px; */
-  border: 1px solid var(--lines);
+  border: 1px solid var(--accent);
   container-type: inline-size;
 }
 

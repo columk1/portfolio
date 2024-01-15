@@ -3,14 +3,29 @@ import Project from '../Project/Project'
 
 const projects = [
   {
+    title: 'Blog API',
+    description:
+      'A REST API for my markdown blog using Node, Express and MongoDB. CRUD operations are done using a CMS I built using React and Tailwind. The CMS allows me to preview markdown while editing. Authentication is handled using JWTs.',
+    image: 'src/assets/blog-cms.jpg',
+    tags: ['Node', 'Express', 'MongoDB', 'React', 'Tailwind'],
+    github: 'https://github.com/columk1/blog-api',
+    url: 'https://cms.columkelly.com/',
+  },
+  {
     title: 'CV Generator',
     description:
-      'A CV Generator made with React. Users can add sections for experience, education, or their own custom sections. A print preview is updated live and can be saved as a PDF.',
-    image:
-      'https://images.unsplash.com/photo-1566241477600-ac026ad43874?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VicGFnZXxlbnwwfHwwfHx8MA%3D%3D',
+      'A React CV Generator. Users can add additional sections for experience, education, or their own custom sections. A print preview is updated live and can be saved as a PDF.',
+    image: 'src/assets/cv-generator.jpg',
     tags: ['React', 'PostCSS', 'Vite'],
     github: 'https://github.com/columk1/cv-application',
     url: 'https://odin-cv-generator.netlify.app/',
+  },
+  {
+    title: 'Members Only',
+    description:
+      'An SSR message board app using Node, Express and MongoDB. Uses EJS for templating and PassportJS for authentication using session cookies.',
+    image: 'src/assets/members-only.jpg',
+    tags: ['Node', 'Express', 'MongoDB', 'EJS', 'PassportJS'],
   },
 ]
 
@@ -18,10 +33,10 @@ const Projects = () => {
   return (
     <section id='projects' className={styles.projects}>
       <div className={styles.projectsContainer}>
-        <div className={styles.projectsContent}>
-          <h2 className={styles.header}>Projects</h2>
-          <Project project={projects[0]} />
-        </div>
+        <h2 className={styles.header}>Projects</h2>
+        {projects.map((project) => (
+          <Project key={project.title} project={project} />
+        ))}
         <div className={styles.footer}></div>
       </div>
     </section>

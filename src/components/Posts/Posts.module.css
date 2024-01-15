@@ -3,11 +3,11 @@
 .blog {
   /* height: 100%; */
   width: 100%;
-  padding: 0 12vw;
-  display: flex;
+  padding: 3rem 12vw;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   color: var(--text);
   background-color: var(--bg);
 }

@@ -23,17 +23,18 @@
   max-width: 970px;
   /* min-height: 65vh; */
   /* height: 340px; */
-  border: 1px solid var(--accent);
+  /* border: 1px solid var(--accent); */
   container-type: inline-size;
 }
 
 .header {
-  margin: 0;
-  padding: 1rem 1.5rem 0;
+  /* margin: 0; */
+  margin: 1rem 1.5rem 0;
   font-family: var(--headerFont);
   font-weight: 400;
   font-size: 2rem;
   color: var(--textFade);
+  /* border-bottom: 1px solid var(--lines); */
 }
 
 .footer {

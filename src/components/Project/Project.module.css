@@ -1,5 +1,5 @@
 .project {
-  border-bottom: 1px solid var(--accent);
+  /* border-bottom: 1px solid var(--accent); */
 }
 
 .projectContainer {
@@ -41,11 +41,11 @@
 }
 
 .projectTitle {
-  margin: 0 0 0 2rem;
+  margin: 0 0 0 4rem;
   font-size: 2rem;
   /* font-weight: 600; */
   color: var(--textFade);
-  border-bottom: 0.5rem solid var(--text);
+  border-bottom: 0.5rem solid var(--textFade);
 }
 
 .projectDescription {

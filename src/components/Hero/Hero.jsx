@@ -8,7 +8,7 @@ import CirclesIcon from '../icons/CirclesIcon'
 import ArrowIcon from '../icons/ArrowIcon'
 import PointerIcon from '../icons/PointerIcon'
 
-const iconStyles = { width: '40', color: 'var(--textFade)' }
+const iconStyles = { width: '2.25rem', color: 'var(--textFade)' }
 
 const Hero = () => {
   return (
@@ -44,7 +44,7 @@ const Hero = () => {
           <p>Hi, I'm a full stack developer based in Squamish, British Columbia.</p>
         </div>
         <div className={styles.footer}>
-          <PointerIcon styles={{ color: 'var(--textFade)' }} />
+          <PointerIcon styles={{ width: '2.75rem', color: 'var(--textFade)' }} />
         </div>
         <div className={styles.links}>
           <a href='https://github.com/columk1' target='_blank' rel='noreferrer'>

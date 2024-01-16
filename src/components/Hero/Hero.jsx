@@ -1,5 +1,5 @@
 import styles from './Hero.module.css'
-import { NavLink } from 'react-router-dom'
+import { NavLink, Link } from 'react-router-dom'
 import Blob from '../Blob/Blob'
 import GlobeIcon from '../icons/GlobeIcon'
 import SquaresIcon from '../icons/SquaresIcon'
@@ -45,6 +45,14 @@ const Hero = () => {
         </div>
         <div className={styles.footer}>
           <PointerIcon styles={{ color: 'var(--textFade)' }} />
+        </div>
+        <div className={styles.links}>
+          <a href='https://github.com/columk1' target='_blank' rel='noreferrer'>
+            Github
+          </a>
+          <a href='mailto:"columk1+website@gmail.com' target='_blank' rel='noreferrer'>
+            Email
+          </a>
         </div>
         {/* <NavLink to={}> */}
         {/* <a href='#projects'>

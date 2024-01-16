@@ -92,6 +92,18 @@
   }
 }
 
+.links {
+  grid-column: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  font-family: var(--bodyFont);
+  & a {
+    color: var(--text);
+  }
+}
+
 .heroContent p {
   width: 82%;
   font-size: 1.2em;

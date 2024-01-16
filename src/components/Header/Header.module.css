@@ -19,7 +19,7 @@
   font-weight: inherit;
 }
 
-header a {
+.header a {
   /* font-weight: bold; */
   padding-bottom: 0.2rem;
   color: var(--text);

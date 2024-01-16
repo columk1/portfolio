@@ -1,6 +1,7 @@
 import styles from './Post.module.css'
 import { useParams, useOutletContext } from 'react-router-dom'
 import Markdown from '../Markdown/Markdown'
+import SquaresIcon from '../icons/SquaresIcon'
 // import { useState } from 'react'
 
 const Post = () => {
@@ -28,6 +29,7 @@ const Post = () => {
           <p className={styles.time}>{`${post.readingLength} MIN READ`}</p>
         </div>
         <div className={styles.divider}></div>
+        <SquaresIcon styles={{ width: '40px', color: 'var(--accent)' }} />
         <div className={styles.markdown}>
           <Markdown markdownString={post.markdown} />
         </div>

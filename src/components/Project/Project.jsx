@@ -1,10 +1,10 @@
 import styles from './Project.module.css'
 import GithubIcon from '../icons/GithubIcon'
 import LinkIcon from '../icons/LinkIcon'
-import { useRef } from 'react'
+import PropTypes from 'prop-types'
 
 const Project = ({ project }) => {
-  const { title, description, image, tags, github, url } = project
+  const { title, description, image, tags, liveUrl, githubUrl } = project
 
   const iconStyles = { color: 'var(--text)', width: '27' }
 
@@ -28,10 +28,10 @@ const Project = ({ project }) => {
             </ul>
           </div>
           <div className={styles.links}>
-            <a href={url} target='_blank' rel='noreferrer'>
+            <a href={liveUrl} target='_blank' rel='noreferrer'>
               <LinkIcon styles={iconStyles} />
             </a>
-            <a href='https://github.com/columk1' target='_blank' rel='noreferrer'>
+            <a href={githubUrl} target='_blank' rel='noreferrer'>
               <GithubIcon styles={iconStyles} />
             </a>
           </div>
@@ -39,6 +39,10 @@ const Project = ({ project }) => {
       </div>
     </div>
   )
+}
+
+Project.propTypes = {
+  project: PropTypes.object,
 }
 
 export default Project

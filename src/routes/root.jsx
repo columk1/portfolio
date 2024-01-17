@@ -19,24 +19,24 @@ export default function Root() {
   const navigation = useNavigation()
   const [posts, setPosts] = useState(load('posts'))
 
-  useEffect(() => {
-    if (posts.length) return
-    const sessionPosts = JSON.parse(sessionStorage.getItem('posts'))
-    // console.log('Session Retrieval')
-    if (sessionPosts) {
-      setPosts(sessionPosts)
-    } else {
-      fetch(`${API_DOMAIN}/api/posts`)
-        .then((res) => res.json())
-        .then((data) => setPosts(data.filter((post) => post.isPublished)))
-      // .catch((err) => console.log(err))
-    }
-  }, [])
+  // useEffect(() => {
+  //   if (posts.length) return
+  //   const sessionPosts = JSON.parse(sessionStorage.getItem('posts'))
+  //   // console.log('Session Retrieval')
+  //   if (sessionPosts) {
+  //     setPosts(sessionPosts)
+  //   } else {
+  //     fetch(`${API_DOMAIN}/api/posts`)
+  //       .then((res) => res.json())
+  //       .then((data) => setPosts(data.filter((post) => post.isPublished)))
+  //     // .catch((err) => console.log(err))
+  //   }
+  // }, [])
 
-  useEffect(() => {
-    // console.log('Session Update')
-    sessionStorage.setItem('posts', JSON.stringify(posts))
-  }, [posts])
+  // useEffect(() => {
+  //   // console.log('Session Update')
+  //   sessionStorage.setItem('posts', JSON.stringify(posts))
+  // }, [posts])
 
   return (
     <div className='mainContainer'>

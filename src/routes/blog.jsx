@@ -20,7 +20,7 @@ const Blog = () => {
       .then((res) => res.json())
       .then((data) => setPosts(data.filter((post) => post.isPublished)))
       .catch((err) => console.log(err))
-      .finally(() => setLoading(false))
+      .finally(() => setTimeout(() => setLoading(false), 2000))
   }, [])
   return <Outlet context={{ posts, setPosts, loading }} />
 }

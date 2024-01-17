@@ -2,8 +2,7 @@
   margin: 0 auto;
   text-align: center;
   & svg {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
     animation: spin 2s linear infinite;
   }
 }

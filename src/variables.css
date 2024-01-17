@@ -14,9 +14,9 @@ body {
   /* --labelBg: #333; */
   --bodyFont: 'IBM Plex Mono', monospace;
   --headerFont: Helvetica, Arial, sans-serif;
-  --link: #9d00ff;
+  --link: #834bdb;
   --linkHover: #b94afe;
-  --linkVisited: #8200d3;
+  --linkVisited: rgb(112, 1, 181);
   --frame: 2rem;
 }
 

@@ -23,6 +23,7 @@ const projects = [
       'An SSR message board app using Node, Express and MongoDB. Uses EJS for templating and PassportJS for authentication using session cookies.',
     image: '/images/members-only.jpg',
     tags: ['Node', 'Express', 'MongoDB', 'EJS', 'PassportJS'],
+    url: 'https://github.com/columk1/members-only',
   },
 ]
 

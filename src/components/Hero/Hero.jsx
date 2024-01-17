@@ -1,6 +1,5 @@
 import styles from './Hero.module.css'
-import { NavLink, Link } from 'react-router-dom'
-import Blob from '../Blob/Blob'
+// import { NavLink, Link } from 'react-router-dom'
 import GlobeIcon from '../icons/GlobeIcon'
 import SquaresIcon from '../icons/SquaresIcon'
 import AsteriskIcon from '../icons/AsteriskIcon'

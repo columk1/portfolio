@@ -1,17 +1,16 @@
-import Feature from '../Feature/Feature'
-import Categories from '../Categories/Categories'
 import ListItem from '../ListItem/ListItem'
 import styles from './Posts.module.css'
+import Loading from '../Loading/Loading.jsx'
 import { useOutletContext } from 'react-router-dom'
 import { useState } from 'react'
 
 const tags = ['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS', 'All']
 
 const Posts = () => {
-  const { posts } = useOutletContext()
+  const { posts, loading } = useOutletContext()
   const [filter, setFilter] = useState('All')
 
-  console.log(posts)
+  // console.log(posts)
   return (
     <>
       <section className={styles.blog}>
@@ -34,13 +33,17 @@ const Posts = () => {
           </div>
           <div className={styles.posts}>
             <h2 className={styles.header}>Blog</h2>
-            <ul className={styles.list}>
-              {posts
-                .filter((post) => filter === 'All' || post.tags.includes(filter))
-                .map((post) => (
-                  <ListItem key={post.title} {...post} />
-                ))}
-            </ul>
+            {loading ? (
+              <Loading />
+            ) : (
+              <ul className={styles.list}>
+                {posts
+                  .filter((post) => filter === 'All' || post.tags.includes(filter))
+                  .map((post) => (
+                    <ListItem key={post.title} {...post} />
+                  ))}
+              </ul>
+            )}
           </div>
           <div className={styles.footer}></div>
         </div>

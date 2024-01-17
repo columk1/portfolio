@@ -1,8 +1,9 @@
 import styles from './Loading.module.css'
+import Spinner from '../Spinner/Spinner'
 const Loading = () => {
   return (
     <div className={styles.loading}>
-      <h2>Loading...</h2>
+      <Spinner />
     </div>
   )
 }

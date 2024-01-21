@@ -10,7 +10,7 @@
 
 <h3 align="center">Portfolio</h3>
   <p align="center">
-  This is my personal portfolio website <b>[columkelly.com](columkelly.com)</b> built with Vite and hosted on Netlify.
+  This is my personal portfolio website <b>[columkelly.com](http://columkelly.com)</b> built with Vite and hosted on Netlify.
   </p>
 </div>
 
@@ -19,13 +19,12 @@
 ## About The Project
 
 [![Portfolio Screenshot][home-screenshot]](https://columkelly.com)
+
 The portfolio is a React front-end which features a showcase of my recent projects as well as my blog and some contact info. The blog data is fetched from an [Express API](https://github.com/columk1/blog-api) and stored in a MongoDB database. A separate [CMS](https://github.com/columk1/blog-cms) is used for CRUD operations.
 
 **Related Repos**
 [Blog API](https://github.com/columk1/blog-api)
 [Blog CMS](https://github.com/columk1/blog-cms)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -56,16 +55,12 @@ nvm install 21.6.0
    VITE_DEV_API=<your local url>
    ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- ROADMAP -->
 
 ## Roadmap
 
 - [ ] Improved Accessibility
 - [ ] Animated Background
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTACT -->
 
@@ -74,8 +69,6 @@ nvm install 21.6.0
 Colum Kelly - [@ColumKelly3](https://twitter.com/ColumKelly3) - columk1@gmail.com
 
 Project Link: [https://columkelly.com/](https://columkelly.com/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

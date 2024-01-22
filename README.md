@@ -10,7 +10,7 @@
 
 <h3 align="center">Portfolio</h3>
   <p align="center">
-  This is my personal portfolio website <b>[columkelly.com](http://columkelly.com)</b> built with Vite and hosted on Netlify.
+  This is my personal portfolio website <b><a href="https://columkelly.com" >columkelly.com</a></b> built with Vite and hosted on Netlify.
   </p>
 </div>
 

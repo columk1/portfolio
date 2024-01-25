@@ -6,7 +6,7 @@ const projects = [
     image: '/images/blog-cms.jpg?url',
     tags: ['Node', 'Express', 'MongoDB', 'React', 'Tailwind'],
     liveUrl: 'https://cms.columkelly.com/',
-    githubUrl: 'https://githubUrl.com/columk1/blog-api',
+    githubUrl: 'https://github.com/columk1/blog-api',
   },
   {
     title: 'CV Generator',
@@ -15,7 +15,7 @@ const projects = [
     image: '/images/cv-generator.jpg?url',
     tags: ['React', 'PostCSS', 'Vite'],
     liveUrl: 'https://odin-cv-generator.netlify.app',
-    githubUrl: 'https://githubUrl.com/columk1/cv-application',
+    githubUrl: 'https://github.com/columk1/cv-application',
   },
   {
     title: 'Members Only',
@@ -24,7 +24,7 @@ const projects = [
     image: '/images/members-only.jpg',
     tags: ['Node', 'Express', 'MongoDB', 'EJS', 'PassportJS'],
     liveUrl: 'https://odin-members-only.adaptable.app',
-    githubUrl: 'https://githubUrl.com/columk1/members-only',
+    githubUrl: 'https://github.com/columk1/members-only',
   },
 ]
 

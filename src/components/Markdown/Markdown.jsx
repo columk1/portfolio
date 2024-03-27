@@ -2,12 +2,16 @@ import he from 'he'
 import ReactMarkdown from 'react-markdown'
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter'
 import jsx from 'react-syntax-highlighter/dist/esm/languages/prism/jsx'
+import tsx from 'react-syntax-highlighter/dist/esm/languages/prism/tsx'
 import js from 'react-syntax-highlighter/dist/esm/languages/prism/javascript'
+import ts from 'react-syntax-highlighter/dist/esm/languages/prism/typescript'
 import css from 'react-syntax-highlighter/dist/esm/languages/prism/css'
 import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 SyntaxHighlighter.registerLanguage('jsx', jsx)
+SyntaxHighlighter.registerLanguage('tsx', tsx)
 SyntaxHighlighter.registerLanguage('js', js)
+SyntaxHighlighter.registerLanguage('ts', ts)
 SyntaxHighlighter.registerLanguage('css', css)
 
 const Markdown = ({ markdownString }) => {

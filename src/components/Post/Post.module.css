@@ -167,8 +167,8 @@
 .markdown p > code {
   padding: 0 0.25rem;
   font-size: 0.9rem;
-  font-weight: 600;
-  background: #f0f0f0;
+  font-weight: 500;
+  background: var(--codeBg);
 }
 
 /* Style code blocks that haven't been assigned a language */
@@ -181,7 +181,7 @@
 /* Workaround to use "* (em) tags" in markdown to create image captions */
 .markdown img + em {
   margin-top: 0.5rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-style: italic;
   text-align: center;
   display: block;

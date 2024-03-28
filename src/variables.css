@@ -14,10 +14,11 @@ body {
   /* --labelBg: #333; */
   --bodyFont: 'IBM Plex Mono', monospace;
   --headerFont: Helvetica, Arial, sans-serif;
-  --link: #834bdb;
-  --linkHover: #b94afe;
-  --linkVisited: rgb(112, 1, 181);
+  --link: #b94afe;
+  --linkHover: rgb(199, 146, 234);
+  --linkVisited: #834bdb;
   --frame: 2rem;
+  --codeBg: #f0f0f0;
 }
 
 body.dark {
@@ -26,6 +27,7 @@ body.dark {
   --lines: #555;
   --text: #d5d5d5;
   --textFade: #c2c2c2;
+  --codeBg: #333;
 }
 
 /* @media (prefers-color-scheme: dark) {

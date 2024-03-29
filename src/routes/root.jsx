@@ -26,7 +26,7 @@ export default function Root() {
   //   fetch(`${API_DOMAIN}/api/posts`)
   //     .then((res) => res.json())
   //     .then((data) => {
-  //       setPosts(data.filter((post) => post.isPublished))
+  //       setPosts(data)
   //       // sessionStorage.setItem('posts', JSON.stringify(posts))
   //     })
   //     .catch((err) => import.meta.env.MODE === 'development' && console.log(err))

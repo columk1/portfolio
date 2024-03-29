@@ -13,9 +13,9 @@ const Blog = () => {
 
   useEffect(() => {
     if (posts.length) return
-    fetch(`${API_DOMAIN}/api/posts`)
+    fetch(`${API_DOMAIN}/api/posts/public`)
       .then((res) => res.json())
-      .then((data) => setPosts(data.filter((post) => post.isPublished)))
+      .then((data) => setPosts(data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false))
     // .finally(() => setTimeout(() => setLoading(false), 2000))

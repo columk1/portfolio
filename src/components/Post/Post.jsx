@@ -2,16 +2,26 @@ import styles from './Post.module.css'
 import { useParams, useOutletContext } from 'react-router-dom'
 import Markdown from '../Markdown/Markdown'
 import SquaresIcon from '../icons/SquaresIcon'
-// import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Loading from '../Loading/Loading'
 
 const Post = () => {
   // const { post } = useLoaderData()
-  const { posts } = useOutletContext()
-
   const id = useParams().postId
-  const post = posts.find((post) => post._id == id)
+  const { posts } = useOutletContext()
+  const [post, setPost] = useState(posts.find((post) => post._id == id))
+  const [loading, setLoading] = useState(!post)
 
-  return (
+  // When the browser tab is refreshed this hook is used to wait for the Outlet context to load
+  useEffect(() => {
+    if (!posts.length) return
+    setPost(posts.find((post) => post._id == id))
+    setLoading(false)
+  }, [post, posts, id])
+
+  return loading ? (
+    <Loading />
+  ) : (
     <section id='post' className={styles.container}>
       {/* {post.imageUrl && (
         <div className={styles.imgContainer}>

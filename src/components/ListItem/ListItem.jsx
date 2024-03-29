@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const ListItem = (props) => {
-  let year = new Date(props.createdAt).getFullYear()
+  // let year = new Date(props.createdAt).getFullYear()
   return (
     <Link to={'/blog/' + props._id}>
       <div className={styles.listItem}>

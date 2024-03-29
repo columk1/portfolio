@@ -5,37 +5,31 @@ import Loading from '../components/Loading/Loading.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import ThemeSelector from '../components/ThemeSelector/ThemeSelector.jsx'
 
-const API_DOMAIN =
-  import.meta.env.MODE === 'production'
-    ? import.meta.env.VITE_PROD_API
-    : import.meta.env.VITE_DEV_API
+// const API_DOMAIN =
+//   import.meta.env.MODE === 'production'
+//     ? import.meta.env.VITE_PROD_API
+//     : import.meta.env.VITE_DEV_API
 
-function load(key) {
-  const item = window.sessionStorage.getItem(key)
-  return item != null ? JSON.parse(item) : []
-}
+// function load(key) {
+//   const item = window.sessionStorage.getItem(key)
+//   return item ? JSON.parse(item) : []
+// }
 
 export default function Root() {
   const navigation = useNavigation()
-  const [posts, setPosts] = useState(load('posts'))
+  const [posts, setPosts] = useState([])
+  // const [posts, setPosts] = useState(load('posts'))
 
   // useEffect(() => {
   //   if (posts.length) return
-  //   const sessionPosts = JSON.parse(sessionStorage.getItem('posts'))
-  //   // console.log('Session Retrieval')
-  //   if (sessionPosts) {
-  //     setPosts(sessionPosts)
-  //   } else {
-  //     fetch(`${API_DOMAIN}/api/posts`)
-  //       .then((res) => res.json())
-  //       .then((data) => setPosts(data.filter((post) => post.isPublished)))
-  //     // .catch((err) => console.log(err))
-  //   }
-  // }, [])
 
-  // useEffect(() => {
-  //   // console.log('Session Update')
-  //   sessionStorage.setItem('posts', JSON.stringify(posts))
+  //   fetch(`${API_DOMAIN}/api/posts`)
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setPosts(data.filter((post) => post.isPublished))
+  //       // sessionStorage.setItem('posts', JSON.stringify(posts))
+  //     })
+  //     .catch((err) => import.meta.env.MODE === 'development' && console.log(err))
   // }, [posts])
 
   return (

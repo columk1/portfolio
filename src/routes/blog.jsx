@@ -7,10 +7,7 @@ const API_DOMAIN =
     : import.meta.env.VITE_DEV_API
 
 const Blog = () => {
-  // const [posts, setPosts] = useState([])
   const { posts, setPosts } = useOutletContext()
-
-  // const [data, setData] = useState(null)
   // const [error, setError] = useState(null)
   const [loading, setLoading] = useState(posts.length ? false : true)
 
@@ -20,8 +17,9 @@ const Blog = () => {
       .then((res) => res.json())
       .then((data) => setPosts(data.filter((post) => post.isPublished)))
       .catch((err) => console.log(err))
-      .finally(() => setTimeout(() => setLoading(false), 2000))
-  }, [])
+      .finally(() => setLoading(false))
+    // .finally(() => setTimeout(() => setLoading(false), 2000))
+  }, [posts, setPosts])
   return <Outlet context={{ posts, setPosts, loading }} />
 }
 

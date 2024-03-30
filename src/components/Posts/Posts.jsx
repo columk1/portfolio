@@ -4,7 +4,7 @@ import Loading from '../Loading/Loading.jsx'
 import { useOutletContext } from 'react-router-dom'
 import { useState } from 'react'
 
-const tags = ['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS', 'All']
+const tags = ['JavaScript', 'HTML', 'CSS', 'React', 'NodeJS', 'Typescript', 'All']
 
 const Posts = () => {
   const { posts, loading } = useOutletContext()

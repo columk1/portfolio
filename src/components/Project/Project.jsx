@@ -28,10 +28,10 @@ const Project = ({ project }) => {
             </ul>
           </div>
           <div className={styles.links}>
-            <a href={liveUrl} target='_blank' rel='noreferrer'>
+            <a href={liveUrl} target='_blank' rel='noreferrer' aria-label='Live Website Link'>
               <LinkIcon styles={iconStyles} />
             </a>
-            <a href={githubUrl} target='_blank' rel='noreferrer'>
+            <a href={githubUrl} target='_blank' rel='noreferrer' aria-label='Github Repo'>
               <GithubIcon styles={iconStyles} />
             </a>
           </div>

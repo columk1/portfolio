@@ -3,7 +3,7 @@ const projects = [
     title: 'Blog API',
     description:
       'A REST API for my personal blog using Node, Express and MongoDB. I built a CMS to interact with the API using React and Tailwind. It allows the admin to preview the markdown while editing. Authentication is handled using JWTs.',
-    image: '/images/blog-cms.jpg?url',
+    image: '/images/blog-cms.png',
     tags: ['Node', 'Express', 'MongoDB', 'React', 'Tailwind'],
     liveUrl: 'https://cms.columkelly.com/',
     githubUrl: 'https://github.com/columk1/blog-api',
@@ -16,6 +16,15 @@ const projects = [
     tags: ['NextJS', 'Typescript', 'Prisma', 'Postgres', 'Tailwind'],
     liveUrl: 'https://messaging-app-azure.vercel.app/',
     githubUrl: 'https://github.com/columk1/messaging-app',
+  },
+  {
+    title: 'Paragliding Dashboard',
+    description:
+      'A weather dashboard for local paragliding pilots. Features a scrollable dynamic wind graph, multiple weather APIs, an interactive UI for viewing windgrams and live camera feed.',
+    image: '/images/dashboard.png',
+    tags: ['Typescript', 'React', 'NextJS', 'Recharts'],
+    liveUrl: 'https://chieflap.vercel.app/',
+    githubUrl: 'https://github.com/columk1/wx-dashboard/',
   },
   {
     // eslint-disable-next-line quotes

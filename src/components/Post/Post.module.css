@@ -1,12 +1,8 @@
 @import '../../variables.css';
 
 .container {
-  /* margin-top: 3rem; */
-  /* display: flex; */
   padding: 0;
-  /* gap: 6rem; */
   width: min(95vw, 990px);
-  /* background-color: var(--bgLight); */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +21,6 @@
 .flexContainer {
   width: 100%;
   padding: 3rem;
-  /* border: 1px solid var(--accent); */
 }
 
 .content {
@@ -34,11 +29,11 @@
 
 .title {
   margin: 1rem 0 1rem;
-  font-family: var(--headerFont);
+  /* font-family: var(--headerFont); */
   font-size: 2.3rem;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 3.2rem;
-  color: var(--textFade);
+  color: var(--header);
 }
 
 .date {
@@ -68,11 +63,11 @@
 }
 
 .markdown {
-  /* font-family: var(--headerFont); */
   margin-top: 1rem;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 400;
   & a {
     color: var(--link);
     font-weight: 500;
@@ -88,13 +83,13 @@
   h3,
   h4 {
     font-family: var(--bodyFont);
-    font-weight: 600;
-    /* color: var(--textFade); */
+    font-weight: bold;
+    color: var(--header);
   }
   & h3 {
-    font-size: 1.5rem;
-    margin: 3rem 0 1.5rem;
-    color: var(--textFade);
+    font-size: 1.7rem;
+    margin: 3rem 0 1rem;
+    color: var(--header);
   }
   /* & h3::after {
     display: inline-block;
@@ -118,6 +113,7 @@
   & li {
     display: list-item;
     list-style: square;
+    line-height: 2.2rem;
   }
   & img {
     display: block;
@@ -156,8 +152,8 @@
 } */
 
 /* Style main code blocks */
-.markdown pre code {
-  font-size: 0.9rem;
+.markdown pre > code {
+  font-size: 1rem;
   font-family: var(--bodyFont);
   font-weight: bold;
   background: none;
@@ -167,7 +163,7 @@
 /* Style inline code */
 .markdown p > code {
   padding: 0 0.25rem;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   background: var(--codeBg);
 }

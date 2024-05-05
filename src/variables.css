@@ -9,8 +9,9 @@ body {
   --bgLight: #e2e2e2;
   --accent: #834bdb;
   --lines: #999;
-  --text: #333;
+  --text: #444;
   --textFade: #4d4d4d;
+  --header: #333;
   /* --labelBg: #333; */
   --bodyFont: 'IBM Plex Mono', monospace;
   --headerFont: Helvetica, Arial, sans-serif;
@@ -25,9 +26,12 @@ body.dark {
   --bg: #181818;
   /* --bgLight: #181818; */
   --lines: #555;
-  --text: #d5d5d5;
+  --text: #b5b5b5;
   --textFade: #c2c2c2;
-  --codeBg: #333;
+  --header: #d5d5d5;
+  --link: rgb(199, 146, 234);
+  --linkHover: rgb(224, 171, 255);
+  --codeBg: #444;
 }
 
 /* @media (prefers-color-scheme: dark) {

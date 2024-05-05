@@ -35,15 +35,16 @@ const Markdown = ({ markdownString }) => {
               style={materialOceanic}
               customStyle={{
                 margin: '0',
-                lineHeight: '1.5',
-                fontSize: '0.8rem',
+                lineHeight: '1.6',
+                fontSize: '0.9rem',
                 // backgroundColor: '#eee',
-                fontWeight: 'bold',
+                fontWeight: '400',
               }}
               codeTagProps={{
                 style: {
-                  lineHeight: 'inherit',
-                  fontSize: 'inherit',
+                  lineHeight: '1.6',
+                  fontSize: '0.9',
+                  fontWeight: '400',
                 },
               }}
             />

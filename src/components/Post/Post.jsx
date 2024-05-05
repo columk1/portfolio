@@ -7,17 +7,17 @@ import Loading from '../Loading/Loading'
 
 const Post = () => {
   // const { post } = useLoaderData()
-  const id = useParams().postId
+  const slug = useParams().postSlug
   const { posts } = useOutletContext()
-  const [post, setPost] = useState(posts.find((post) => post._id == id))
+  const [post, setPost] = useState(posts.find((post) => post.slug == slug))
   const [loading, setLoading] = useState(!post)
 
   // When the browser tab is refreshed this hook is used to wait for the Outlet context to load
   useEffect(() => {
     if (!posts.length) return
-    setPost(posts.find((post) => post._id == id))
+    setPost(posts.find((post) => post.slug == slug))
     setLoading(false)
-  }, [post, posts, id])
+  }, [post, posts, slug])
 
   return loading ? (
     <Loading />

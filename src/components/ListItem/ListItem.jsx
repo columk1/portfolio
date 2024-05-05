@@ -3,9 +3,8 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 
 const ListItem = (props) => {
-  // let year = new Date(props.createdAt).getFullYear()
   return (
-    <Link to={'/blog/' + props._id}>
+    <Link to={'/blog/' + props.slug}>
       <div className={styles.listItem}>
         <p className={styles.title}>{props.title}</p>
         <p className={styles.date}>{props.formattedDate}</p>
@@ -20,7 +19,7 @@ const ListItem = (props) => {
 }
 
 ListItem.propTypes = {
-  _id: PropTypes.string,
+  slug: PropTypes.string,
   title: PropTypes.string,
   createdAt: PropTypes.string,
   formattedDate: PropTypes.string,

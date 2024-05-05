@@ -7,6 +7,7 @@ import js from 'react-syntax-highlighter/dist/esm/languages/prism/javascript'
 import ts from 'react-syntax-highlighter/dist/esm/languages/prism/typescript'
 import css from 'react-syntax-highlighter/dist/esm/languages/prism/css'
 import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import PropTypes from 'prop-types'
 
 SyntaxHighlighter.registerLanguage('jsx', jsx)
 SyntaxHighlighter.registerLanguage('tsx', tsx)
@@ -14,12 +15,26 @@ SyntaxHighlighter.registerLanguage('js', js)
 SyntaxHighlighter.registerLanguage('ts', ts)
 SyntaxHighlighter.registerLanguage('css', css)
 
+const LinkRenderer = (props) => {
+  return (
+    <a href={props.href} target='_blank' rel='noreferrer'>
+      {props.children}
+    </a>
+  )
+}
+
+LinkRenderer.propTypes = {
+  href: PropTypes.string,
+  children: PropTypes.node,
+}
+
 const Markdown = ({ markdownString }) => {
   const markdown = he.decode(markdownString)
   return markdown ? (
     <ReactMarkdown
       children={markdown}
       components={{
+        a: LinkRenderer,
         code(props) {
           const { children, className, node, ...rest } = props
           const match = /language-(\w+)/.exec(className || '')
@@ -57,6 +72,10 @@ const Markdown = ({ markdownString }) => {
       }}
     />
   ) : null
+}
+
+Markdown.propTypes = {
+  markdownString: PropTypes.string,
 }
 
 export default Markdown

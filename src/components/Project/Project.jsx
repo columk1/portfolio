@@ -12,7 +12,9 @@ const Project = ({ project }) => {
     <div className={styles.project}>
       <div className={styles.projectContainer}>
         <div className={styles.imgContainer}>
-          <img src={image} alt={title} />
+          <a href={liveUrl} target='_blank' rel='noreferrer'>
+            <img src={image} alt={title} />
+          </a>
         </div>
         <div className={styles.projectDetails}>
           <h3 className={styles.projectTitle}>{title}</h3>

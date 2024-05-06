@@ -20,6 +20,7 @@ body {
   --linkVisited: #834bdb;
   --frame: 2rem;
   --codeBg: #f0f0f0;
+  --hoverShadow: rgba(131, 75, 219, 0.1);
 }
 
 body.dark {
@@ -32,6 +33,7 @@ body.dark {
   --link: rgb(199, 146, 234);
   --linkHover: rgb(224, 171, 255);
   --codeBg: #444;
+  --hoverShadow: rgba(131, 75, 219, 0.75);
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -2,7 +2,7 @@ const projects = [
   {
     title: 'Blog API',
     description:
-      'A REST API for my personal blog using Node, Express and MongoDB. I built a CMS to interact with the API using React and Tailwind. It allows the admin to preview the markdown while editing. Authentication is handled using JWTs.',
+      'A REST API for my personal blog using Node, Express and MongoDB. I built a simple CMS to interact with the API using React and Tailwind. It allows the admin to preview the rendered markdown and syntax highlighting while editing. Authentication is handled using JWTs.',
     image: '/images/blog-cms.png',
     tags: ['Node', 'Express', 'MongoDB', 'React', 'Tailwind'],
     liveUrl: 'https://cms.columkelly.com/',
@@ -11,7 +11,7 @@ const projects = [
   {
     title: 'Messaging App',
     description:
-      'A real-time messaging app built with Next.JS using React, Tailwind, Prisma, Postgres, NextAuth and Pusher. Although initially modelled on a tutorial, I spent a few weeks addressing issues and building out features of my own.',
+      'A real-time messaging app built with Next.js using React, Tailwind, Prisma, Postgres, NextAuth and Pusher. Although initially modelled on a tutorial with a slightly different stack, I spent a few weeks addressing issues and adding new features.',
     image: '/images/messaging-app.jpg',
     tags: ['NextJS', 'Typescript', 'Prisma', 'Postgres', 'Tailwind'],
     liveUrl: 'https://messaging-app-azure.vercel.app/',
@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'Paragliding Dashboard',
     description:
-      'A weather dashboard for local paragliding pilots. Features a scrollable dynamic wind graph, multiple weather APIs, an interactive UI for viewing windgrams and live camera feed.',
+      'A weather dashboard for local paragliding pilots. Features a scrollable dynamic wind graph, displays for multiple weather APIs, an interactive UI for viewing windgrams and a live camera feed of the local mountain.',
     image: '/images/dashboard.png',
     tags: ['Typescript', 'React', 'NextJS', 'Recharts'],
     liveUrl: 'https://chieflap.vercel.app/',
@@ -49,7 +49,7 @@ const projects = [
   {
     title: 'Battleship',
     description:
-      'An MVC battleship game built with Webpack. Drag and drop to position ships. Computer opponent uses a hunt and target algorithm.',
+      'An MVC battleship game in Vanilla JS, built with Webpack. Drag and drop to position ships. Computer opponent uses a hunt and target algorithm.',
     image: '/images/battleship.png',
     tags: ['Javascript', 'HTML', 'CSS', 'Webpack'],
     liveUrl: 'https://top-battleship.netlify.app/',

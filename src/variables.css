@@ -21,6 +21,7 @@ body {
   --frame: 2rem;
   --codeBg: #f0f0f0;
   --hoverShadow: rgba(131, 75, 219, 0.1);
+  --easeOut: cubic-bezier(0, 0, 0.185, 0.995);
 }
 
 body.dark {

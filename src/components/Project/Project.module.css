@@ -87,6 +87,7 @@
     opacity: 0;
     scale: 2;
     translate: -30rem;
+    filter: blur(50px);
   }
 }
 
@@ -94,6 +95,7 @@
   from {
     opacity: 0;
     translate: 30rem;
+    filter: blur(50px);
   }
 }
 
@@ -101,12 +103,14 @@
   from {
     opacity: 0;
     transform: translateY(30rem);
+    filter: blur(75px);
   }
 }
 
 @keyframes scale-in {
   from {
     scale: 0;
+    filter: blur(75px);
   }
 }
 

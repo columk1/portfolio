@@ -1,0 +1,8 @@
+.fadeInText {
+  opacity: 0;
+  transition: opacity 800ms ease-out;
+}
+
+.visible {
+  opacity: 1;
+}

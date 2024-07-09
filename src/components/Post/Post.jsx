@@ -9,7 +9,7 @@ const Post = () => {
   // const { post } = useLoaderData()
   const slug = useParams().postSlug
   const { posts } = useOutletContext()
-  const [post, setPost] = useState(posts.find((post) => post.slug == slug))
+  const [post, setPost] = useState(null)
   const [loading, setLoading] = useState(!post)
 
   // When the browser tab is refreshed this hook is used to wait for the Outlet context to load

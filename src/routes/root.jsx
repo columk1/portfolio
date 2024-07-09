@@ -4,11 +4,33 @@ import Header from '../components/Header/Header.jsx'
 import Loading from '../components/Loading/Loading.jsx'
 import Footer from '../components/Footer/Footer.jsx'
 import ThemeSelector from '../components/ThemeSelector/ThemeSelector.jsx'
+import projects from '../data/projects.js'
 
 const API_DOMAIN =
   import.meta.env.MODE === 'production'
     ? import.meta.env.VITE_PROD_API
     : import.meta.env.VITE_DEV_API
+
+const projectsSrcArray = projects.map((project) => project.image).filter((e, i) => i < 2)
+
+function preloadImages(srcArray) {
+  srcArray.forEach((src) => {
+    preloadImage(src)
+  })
+}
+
+function preloadImage(src) {
+  return new Promise((resolve, reject) => {
+    const img = new Image()
+    img.onload = function () {
+      resolve(img)
+    }
+    img.onerror = img.onabort = function () {
+      reject(src)
+    }
+    img.src = src
+  })
+}
 
 // function load(key) {
 //   const item = window.sessionStorage.getItem(key)
@@ -30,6 +52,10 @@ export default function Root() {
       .finally(() => setLoading(false))
     // .finally(() => setTimeout(() => setLoading(false), 2000)) // test loading state
   }, [posts, setPosts])
+
+  useEffect(() => {
+    preloadImages(projectsSrcArray)
+  }, [])
 
   return (
     <div className='mainContainer'>

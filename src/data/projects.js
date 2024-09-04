@@ -27,6 +27,15 @@ const projects = [
     githubUrl: 'https://github.com/columk1/wx-dashboard/',
   },
   {
+    title: 'File Uploader',
+    description:
+      'A cloud storage application for file management and sharing. Built with Typescript, Express, EJS and Web Components. Features a modular architecture with caching and bundling of assets.',
+    image: '/images/file-uploader.png',
+    tags: ['Typescript', 'Node', 'Express', 'EJS', 'PostgreSQL', 'Docker'],
+    liveUrl: 'https://columk-file-uploader.adaptable.app/',
+    githubUrl: 'https://github.com/columk1/file-uploader',
+  },
+  {
     // eslint-disable-next-line quotes
     title: "Where's Alex Honnold?",
     description:
